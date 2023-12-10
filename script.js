@@ -31,11 +31,29 @@ function playRound(playerSelection, computerSelection){
         return 'You win. Rock beats Scissors';
     }
     //If user types in 'Scissors' and computer selects 'Paper', return 'You win. Scissors beats Paper'
+    else if (playerSelection === 'Scissors' && computerSelection === 'Paper') {
+        return 'You win. Scissors beats Paper';
+    }
     //If user types in 'Paper' and computer selects 'Rock', return 'You win. Paper beats Rock'
+    else if (playerSelection === 'Paper' && computerSelection === 'Rock'){
+        return 'You win. Paper beats Rock';
+    }
     /*If user types in 'Rock' and computer selects 'Rock', user selects 'Scissors' and player chooses 'Scissors'
     OR user selects 'Paper' and computer chooses 'Paper', return 'You tied! let's replay another round' and 
     call the same function to instruct the player to play the round again*/
+    else if (playerSelection === computerSelection) {
+        return 'You tied! Let\'s play another round';
+    }
     //If the user types in 'Rock' and computer chooses 'Paper', return 'You lose. Paper beats Rock'
+    else if (playerSelection === 'Rock' && computerSelection === 'Paper') {
+        return 'You lose. Paper beats Rock';
+    }
     //If the user types in 'Scissors' and computer selects 'Rock', return 'You lose. Rock beats Scissors'
+    else if (playerSelection === 'Scissors' && computerSelection === 'Rock') {
+        return 'You lose. Rock beats Scissors';
+    }
     //If the user types in 'Paper' and computer selects 'Scissors', return 'You lose. Scissors beats Paper'
+    else if (playerSelection === 'Paper' && computerSelection === 'Scissors'){
+        return 'You lose. Scissors beats Paper';
+    }
 }
