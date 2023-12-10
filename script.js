@@ -22,25 +22,23 @@ function getComputerChoice(){
 //Add a variable that assigns the value of the computer's move
 let computerSelection = 'Scissors';
 
-//Initialize an existing variable for the player and enable the user to input the string value
-playerSelection = prompt('Enter "Rock", "Paper" and "Scissors"');
-
-//Enable the player to type in case-insensitive value
-playerSelection = playerSelection.toLowerCase();
-
 /* Add a function that will enable the player to play the round of Rock, Paper, Scissors by passing both the
 player and computer's input and returning the result for the player if they win, lose or tie */
 function playRound(playerSelection, computerSelection){    
+    //Initialize an existing variable for the player and enable the user to input the string value
+    playerSelection = prompt('Enter "Rock", "Paper" and "Scissors"');
+    //Enable the player to type in case-insensitive value
+    playerSelection = playerSelection.toLowerCase();
     //If user types in 'Rock' and computer selects 'Scissors', return 'You win. Rock beats Scissors'
-    if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
+    if (playerSelection === 'rock' && computerSelection === 'Scissors') {
         return 'You win. Rock beats Scissors';
     }
     //If user types in 'Scissors' and computer selects 'Paper', return 'You win. Scissors beats Paper'
-    else if (playerSelection === 'Scissors' && computerSelection === 'Paper') {
+    else if (playerSelection === 'scissors' && computerSelection === 'Paper') {
         return 'You win. Scissors beats Paper';
     }
     //If user types in 'Paper' and computer selects 'Rock', return 'You win. Paper beats Rock'
-    else if (playerSelection === 'Paper' && computerSelection === 'Rock'){
+    else if (playerSelection === 'paper' && computerSelection === 'Rock'){
         return 'You win. Paper beats Rock';
     }
     /*If user types in 'Rock' and computer selects 'Rock', user selects 'Scissors' and player chooses 'Scissors'
@@ -50,15 +48,15 @@ function playRound(playerSelection, computerSelection){
         return 'You tied! Let\'s play another round';
     }
     //If the user types in 'Rock' and computer chooses 'Paper', return 'You lose. Paper beats Rock'
-    else if (playerSelection === 'Rock' && computerSelection === 'Paper') {
+    else if (playerSelection === 'rock' && computerSelection === 'Paper') {
         return 'You lose. Paper beats Rock';
     }
     //If the user types in 'Scissors' and computer selects 'Rock', return 'You lose. Rock beats Scissors'
-    else if (playerSelection === 'Scissors' && computerSelection === 'Rock') {
+    else if (playerSelection === 'scissors' && computerSelection === 'Rock') {
         return 'You lose. Rock beats Scissors';
     }
     //If the user types in 'Paper' and computer selects 'Scissors', return 'You lose. Scissors beats Paper'
-    else if (playerSelection === 'Paper' && computerSelection === 'Scissors'){
+    else if (playerSelection === 'paper' && computerSelection === 'Scissors'){
         return 'You lose. Scissors beats Paper';
     }    
 }
