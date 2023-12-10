@@ -25,6 +25,7 @@ function playRound(playerSelection, computerSelection){
     //Initialize an existing variable for the player and enable the user to input the string value
     playerSelection = prompt('Enter "Rock", "Paper" and "Scissors"');
     //Enable the player to type in case-insensitive value
+    playerSelection = playerSelection.toLowerCase();
     //If user types in 'Rock' and computer selects 'Scissors', return 'You win. Rock beats Scissors'
     //If user types in 'Scissors' and computer selects 'Paper', return 'You win. Scissors beats Paper'
     //If user types in 'Paper' and computer selects 'Rock', return 'You win. Paper beats Rock'
