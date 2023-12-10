@@ -64,6 +64,7 @@ function playRound(playerSelection, computerSelection){
 /* Include a function that a user plays five rounds of the game */
 function game() {
     //Declare a variable that holds the score for the player
+    let score;
     //For each round for the player, invoke the function to play each round and increment score by 1 if player won
     //If player has drawn that round, invoke the function until the player lost or won that round
     //After all five rounds, print 'Score: score number'
