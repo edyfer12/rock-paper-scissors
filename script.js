@@ -4,15 +4,15 @@ function getComputerChoice(){
     let computerMove;
     //To have random integer values between 1 and 3, round down and multiply random number by 3 and store into variable
     computerMove = Math.floor(Math.random() * 3) + 1;
-    //If integer is 1, print 'Rock' 
+    //If integer is 1, print 'Rock' and return string value, 'Rock'
     if(computerMove == 1) {
         console.log('Rock');
     }
-    //If integer is 2, print 'Paper' 
+    //If integer is 2, print 'Paper' and return string value, 'Paper'
     else if(computerMove == 2) {
         console.log('Paper');
     }
-    //If integer is 3, print 'Scissors'
+    //If integer is 3, print 'Scissors' and return string value, 'Scissors'
     else {
         console.log('Scissors');
     }
