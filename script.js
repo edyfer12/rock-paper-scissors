@@ -61,5 +61,11 @@ function playRound(playerSelection, computerSelection){
         return 'You lose. Scissors beats Paper';
     }    
 }
-/* Include a function that a player scores five rounds of the game. After 5 rounds, result is then displayed for the 
-player */
+/* Include a function that a user plays five rounds of the game */
+    //Declare a variable that holds the score for the player
+    //For each round for the player, invoke the function to play each round and increment score by 1 if player won
+    //If player has drawn that round, invoke the function until the player lost or won that round
+    //After all five rounds, print 'Score: score number'
+    //If the score is greater than 2, print 'You have won!'
+    //If the score is less than 3, print 'You have lost!'
+    
