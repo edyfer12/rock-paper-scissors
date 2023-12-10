@@ -57,7 +57,5 @@ function playRound(playerSelection, computerSelection){
     //If the user types in 'Paper' and computer selects 'Scissors', return 'You lose. Scissors beats Paper'
     else if (playerSelection === 'Paper' && computerSelection === 'Scissors'){
         return 'You lose. Scissors beats Paper';
-    }
-    //Display the result after player plays the round
-    let result = playRound('Rock', computerSelection);
+    }    
 }
