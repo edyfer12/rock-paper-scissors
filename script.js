@@ -1,4 +1,4 @@
-//Include a function that will return string randomly Rock, Paper or Scissors for both the player and computer
+//Include a function that will return string randomly Rock, Paper or Scissors for computer
 function getComputerChoice(){
     //Inside the function, declare a new variable. 
     let randomMove;
