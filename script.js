@@ -19,8 +19,6 @@ function getComputerChoice(){
         console.log('Scissors');
         return 'Scissors';
     }
-    //Return the variable inside the function
-    return computerMove;
 }
 //Add a variable that assigns the value of the computer's move
 let computerSelection = 'Scissors';
