@@ -66,6 +66,7 @@ function game() {
     //Declare a variable that holds the score for the player
     let score = 0;
     //For each round for the player, invoke the function to play each round and increment score by 1 if player won
+    playRound(playerSelection, computerSelection);
     //If player has drawn that round, invoke the function until the player lost or won that round
     //After all five rounds, print 'Score: score number'
     //If the score is greater than 2, print 'You have won!'
