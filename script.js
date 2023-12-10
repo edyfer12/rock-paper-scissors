@@ -2,7 +2,7 @@
 function getComputerChoice(){
     //Inside the function, declare a new variable. 
     let randomMove;
-    //To have random integer values between 1 and 3, add random number by 3 with the sum rounded down stored into variable
+    //To have random integer values between 1 and 3, round down and multiply random number by 3 and store into variable
     randomMove = Math.floor(Math.random() * 3) + 1;
     //If integer is 1, print 'Rock' 
     if(randomMove == 1) {
