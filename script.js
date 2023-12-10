@@ -66,8 +66,61 @@ function game() {
     //Declare a variable that holds the score for the player
     let score = 0;
     //For each round for the player, invoke the function to play each round and increment score by 1 if player won
+    //For first round of the game,
     playRound(playerSelection, computerSelection);
+    if(playRound(playerSelection, computerSelection) === 'You win. Rock beats Scissors'
+    || playRound(playerSelection, computerSelection) === 'You win. Scissors beats Paper'
+    || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
+        score +=1;
+    }
     //If player has drawn that round, invoke the function until the player lost or won that round
+    else if (playRound(playerSelection, computerSelection) === true){
+        playRound(playerSelection,computerSelection);
+    }
+    //For second round of the game,
+    playRound(playerSelection, computerSelection);
+    if(playRound(playerSelection, computerSelection) === 'You win. Rock beats Scissors'
+    || playRound(playerSelection, computerSelection) === 'You win. Scissors beats Paper'
+    || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
+        score +=1;
+    }
+    //If player has drawn that round, invoke the function until the player lost or won that round
+    else if (playRound(playerSelection, computerSelection) === true){
+        playRound(playerSelection,computerSelection);
+    }
+    //For third round of the game,
+    playRound(playerSelection, computerSelection);
+    if(playRound(playerSelection, computerSelection) === 'You win. Rock beats Scissors'
+    || playRound(playerSelection, computerSelection) === 'You win. Scissors beats Paper'
+    || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
+        score +=1;
+    }
+    //If player has drawn that round, invoke the function until the player lost or won that round
+    else if (playRound(playerSelection, computerSelection) === true){
+        playRound(playerSelection,computerSelection);
+    }
+    //For fourth round of the game,
+    playRound(playerSelection, computerSelection);
+    if(playRound(playerSelection, computerSelection) === 'You win. Rock beats Scissors'
+    || playRound(playerSelection, computerSelection) === 'You win. Scissors beats Paper'
+    || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
+        score +=1;
+    }
+    //If player has drawn that round, invoke the function until the player lost or won that round
+    else if (playRound(playerSelection, computerSelection) === true){
+        playRound(playerSelection,computerSelection);
+    }
+    //For fifth round of the game,
+    playRound(playerSelection, computerSelection);
+    if(playRound(playerSelection, computerSelection) === 'You win. Rock beats Scissors'
+    || playRound(playerSelection, computerSelection) === 'You win. Scissors beats Paper'
+    || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
+        score +=1;
+    }
+    //If player has drawn that round, invoke the function until the player lost or won that round
+    else if (playRound(playerSelection, computerSelection) === true){
+        playRound(playerSelection,computerSelection);
+    }
     //After all five rounds, print 'Score: score number'
     //If the score is greater than 2, print 'You have won!'
     //If the score is less than 3, print 'You have lost!'
