@@ -7,14 +7,17 @@ function getComputerChoice(){
     //If integer is 1, print 'Rock' and return string value, 'Rock'
     if(computerMove == 1) {
         console.log('Rock');
+        return 'Rock';
     }
     //If integer is 2, print 'Paper' and return string value, 'Paper'
     else if(computerMove == 2) {
         console.log('Paper');
+        return 'Paper';
     }
     //If integer is 3, print 'Scissors' and return string value, 'Scissors'
     else {
         console.log('Scissors');
+        return 'Scissors'
     }
     //Return the variable inside the function
     return computerMove;
