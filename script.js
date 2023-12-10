@@ -16,4 +16,6 @@ function getComputerChoice(){
     else {
         console.log('Scissors');
     }
+    //Return the variable inside the function
+    return randomMove;
 }
