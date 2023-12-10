@@ -17,7 +17,7 @@ function getComputerChoice(){
     //If integer is 3, print 'Scissors' and return string value, 'Scissors'
     else {
         console.log('Scissors');
-        return 'Scissors'
+        return 'Scissors';
     }
     //Return the variable inside the function
     return computerMove;
