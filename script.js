@@ -27,6 +27,9 @@ function playRound(playerSelection, computerSelection){
     //Enable the player to type in case-insensitive value
     playerSelection = playerSelection.toLowerCase();
     //If user types in 'Rock' and computer selects 'Scissors', return 'You win. Rock beats Scissors'
+    if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
+        return 'You win. Rock beats Scissors';
+    }
     //If user types in 'Scissors' and computer selects 'Paper', return 'You win. Scissors beats Paper'
     //If user types in 'Paper' and computer selects 'Rock', return 'You win. Paper beats Rock'
     /*If user types in 'Rock' and computer selects 'Rock', user selects 'Scissors' and player chooses 'Scissors'
