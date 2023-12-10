@@ -138,6 +138,13 @@ function game() {
     //After all five rounds, print 'Score: score number'
     console.log('Score: ' + score);
     //If the score is greater than 2, print 'You have won!'
+    if(score > 2) {
+        console.log('You have won!');
+    }
     //If the score is less than 3, print 'You have lost!'
+    else if(score < 3) {
+        console.log('You have lost!');
+    }
+    
 }
     
