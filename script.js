@@ -21,7 +21,7 @@ function getComputerChoice(){
     }
 }
 //Add a variable that assigns the value of the computer's move
-let computerSelection = computerSelection();
+let computerSelection = getComputerChoice();
 
 /* Add a function that will enable the player to play the round of Rock, Paper, Scissors by passing both the
 player and computer's input and returning the result for the player if they win, lose or tie */
