@@ -75,7 +75,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke playRound function
+    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke playRound function 
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
@@ -89,7 +89,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke playRound function
+    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke playRound function
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
@@ -103,7 +103,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke playRound function
+    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke playRound function
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
@@ -117,7 +117,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke the PlayRound function
+    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke the PlayRound function
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
@@ -131,7 +131,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke the PlayRound function
+    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke the PlayRound function
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
