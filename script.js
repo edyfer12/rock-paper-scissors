@@ -7,17 +7,17 @@ function getComputerChoice(){
     //If integer is 1, print 'Rock' and return string value, 'Rock'
     if(computerMove == 1) {
         console.log('Rock');
-        return 'Rock';
+        return 'rock';
     }
     //If integer is 2, print 'Paper' and return string value, 'Paper'
     else if(computerMove == 2) {
         console.log('Paper');
-        return 'Paper';
+        return 'paper';
     }
     //If integer is 3, print 'Scissors' and return string value, 'Scissors'
     else {
         console.log('Scissors');
-        return 'Scissors';
+        return 'scissors';
     }
 }
 //Add a variable that assigns the value of the computer's move
@@ -31,15 +31,15 @@ function playRound(playerSelection, computerSelection){
     //Enable the player to type in case-insensitive value
     //playerSelection = playerSelection.toLowerCase();
     //If user types in 'Rock' and computer selects 'Scissors', return 'You win. Rock beats Scissors'
-    if (playerSelection === 'rock' && computerSelection === 'Scissors') {
+    if (playerSelection === 'rock' && computerSelection === 'scissors') {
         return 'You win. Rock beats Scissors';
     }
     //If user types in 'Scissors' and computer selects 'Paper', return 'You win. Scissors beats Paper'
-    else if (playerSelection === 'scissors' && computerSelection === 'Paper') {
+    else if (playerSelection === 'scissors' && computerSelection === 'paper') {
         return 'You win. Scissors beats Paper';
     }
     //If user types in 'Paper' and computer selects 'Rock', return 'You win. Paper beats Rock'
-    else if (playerSelection === 'paper' && computerSelection === 'Rock'){
+    else if (playerSelection === 'paper' && computerSelection === 'rock'){
         return 'You win. Paper beats Rock';
     }
     /*If user types in 'Rock' and computer selects 'Rock', user selects 'Scissors' and player chooses 'Scissors'
@@ -49,15 +49,15 @@ function playRound(playerSelection, computerSelection){
         return 'You tied! Let\'s play another round';
     }
     //If the user types in 'Rock' and computer chooses 'Paper', return 'You lose. Paper beats Rock'
-    else if (playerSelection === 'rock' && computerSelection === 'Paper') {
+    else if (playerSelection === 'rock' && computerSelection === 'paper') {
         return 'You lose. Paper beats Rock';
     }
     //If the user types in 'Scissors' and computer selects 'Rock', return 'You lose. Rock beats Scissors'
-    else if (playerSelection === 'scissors' && computerSelection === 'Rock') {
+    else if (playerSelection === 'scissors' && computerSelection === 'rock') {
         return 'You lose. Rock beats Scissors';
     }
     //If the user types in 'Paper' and computer selects 'Scissors', return 'You lose. Scissors beats Paper'
-    else if (playerSelection === 'paper' && computerSelection === 'Scissors'){
+    else if (playerSelection === 'paper' && computerSelection === 'scissors'){
         return 'You lose. Scissors beats Paper';
     }    
 }
@@ -75,9 +75,12 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke playRound function 
-    else if (playRound(playerSelection, computerSelection) === true){
-        playRound(playerSelection,computerSelection);
+    //If player draws, add extra round for the player 
+    else if (playRound(playerSelection, computerSelection) === 'You tied! Let\'s play another round'){
+        //encourage user to enter input case-insensitive
+        playerSelection = prompt('R, P, S?');
+        //encourage computer to return value
+        computerSelection = getComputerChoice();
     }
     //For Round 2, encourage user to enter input case-insensitive and computer to return random value and invoke play round function
     playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
@@ -89,9 +92,12 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke playRound function
+    //If player draws, add extra round for the player 
     else if (playRound(playerSelection, computerSelection) === true){
-        playRound(playerSelection,computerSelection);
+        //encourage user to enter input case-insensitive
+        playerSelection = prompt('R, P, S?');
+        //encourage computer to return value
+        computerSelection = getComputerChoice();
     }
     //For Round 3, encourage user to enter input case-insensitive and computer to return random value and invoke play round function
     playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
@@ -103,9 +109,12 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke playRound function
+    //If player draws, add extra round for the player 
     else if (playRound(playerSelection, computerSelection) === true){
-        playRound(playerSelection,computerSelection);
+        //encourage user to enter input case-insensitive
+        playerSelection = prompt('R, P, S?');
+        //encourage computer to return value
+        computerSelection = getComputerChoice();
     }
     //For Round 4, encourage user to enter input case-insensitive and computer to return random value and invoke play round function 
     playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
@@ -117,9 +126,12 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke the PlayRound function
+    //If player draws, add extra round for the player 
     else if (playRound(playerSelection, computerSelection) === true){
-        playRound(playerSelection,computerSelection);
+        //encourage user to enter input case-insensitive
+        playerSelection = prompt('R, P, S?');
+        //encourage computer to return value
+        computerSelection = getComputerChoice();
     }
     //For Round 5, encourage user to enter input case-insensitive and computer to return random value and invoke play round function
     playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
@@ -131,9 +143,12 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, invoke the PlayRound function
+    //If player draws, add extra round for the player 
     else if (playRound(playerSelection, computerSelection) === true){
-        playRound(playerSelection,computerSelection);
+        //encourage user to enter input case-insensitive
+        playerSelection = prompt('R, P, S?');
+        //encourage computer to return value
+        computerSelection = getComputerChoice();
     }
     //After all five rounds, print 'Score: score number'
     console.log('Score: ' + score);
