@@ -1,4 +1,4 @@
-# rock-paper-scisssors
+# rock-paper-scissors
 
 This is an interactive game that will enable users to play against the computer for Rock Paper Scissors.
 
