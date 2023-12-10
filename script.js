@@ -75,10 +75,8 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke playRound function 
+    //If player draws, invoke playRound function 
     else if (playRound(playerSelection, computerSelection) === true){
-        playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
-        computerSelection = getComputerChoice();
         playRound(playerSelection,computerSelection);
     }
     //For Round 2, encourage user to enter input case-insensitive and computer to return random value and invoke play round function
@@ -91,10 +89,8 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke playRound function
+    //If player draws, invoke playRound function
     else if (playRound(playerSelection, computerSelection) === true){
-        playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
-        computerSelection = getComputerChoice();
         playRound(playerSelection,computerSelection);
     }
     //For Round 3, encourage user to enter input case-insensitive and computer to return random value and invoke play round function
@@ -107,10 +103,8 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke playRound function
+    //If player draws, invoke playRound function
     else if (playRound(playerSelection, computerSelection) === true){
-        playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
-        computerSelection = getComputerChoice();
         playRound(playerSelection,computerSelection);
     }
     //For Round 4, encourage user to enter input case-insensitive and computer to return random value and invoke play round function 
@@ -123,10 +117,8 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke the PlayRound function
+    //If player draws, invoke the PlayRound function
     else if (playRound(playerSelection, computerSelection) === true){
-        playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
-        computerSelection = getComputerChoice();
         playRound(playerSelection,computerSelection);
     }
     //For Round 5, encourage user to enter input case-insensitive and computer to return random value and invoke play round function
@@ -139,10 +131,8 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player draws, encourage user to enter input case-insensitive and computer to return random value and invoke the PlayRound function
+    //If player draws, invoke the PlayRound function
     else if (playRound(playerSelection, computerSelection) === true){
-        playerSelection = prompt('Enter Rock, Paper or Scissors').toLowerCase();
-        computerSelection = getComputerChoice();
         playRound(playerSelection,computerSelection);
     }
     //After all five rounds, print 'Score: score number'
