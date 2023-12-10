@@ -65,7 +65,7 @@ function playRound(playerSelection, computerSelection){
 function game() {
     //Declare a variable that holds the score for the player
     let score = 0;
-    //For each round for the player, invoke the function to play each round and increment score by 1 if player won
+    //For each round for the player, encourage user to enter input and invoke the function to play each round and increment score by 1 if player won
     //For first round of the game,
     playRound(playerSelection, computerSelection);
     if(playRound(playerSelection, computerSelection) === 'You win. Rock beats Scissors'
@@ -73,7 +73,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player has drawn that round, invoke the function until the player lost or won that round
+    //If player has drawn that round, encourage user to enter input and invoke the function until the player lost or won that round
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
@@ -84,7 +84,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player has drawn that round, invoke the function until the player lost or won that round
+    //If player has drawn that round, encourage user to enter input and invoke the function until the player lost or won that round
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
@@ -95,7 +95,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player has drawn that round, invoke the function until the player lost or won that round
+    //If player has drawn that round, encourage user to enter input and invoke the function until the player lost or won that round
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
@@ -106,7 +106,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player has drawn that round, invoke the function until the player lost or won that round
+    //If player has drawn that round, encourage user to enter input and invoke the function until the player lost or won that round
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
@@ -117,7 +117,7 @@ function game() {
     || playRound(playerSelection, computerSelection) === 'You win. Paper beats Rock'){
         score +=1;
     }
-    //If player has drawn that round, invoke the function until the player lost or won that round
+    //If player has drawn that round, encourage user to enter input and invoke the function until the player lost or won that round
     else if (playRound(playerSelection, computerSelection) === true){
         playRound(playerSelection,computerSelection);
     }
