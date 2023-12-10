@@ -43,10 +43,9 @@ function playRound(playerSelection, computerSelection){
         return 'You win. Paper beats Rock';
     }
     /*If user types in 'Rock' and computer selects 'Rock', user selects 'Scissors' and player chooses 'Scissors'
-    OR user selects 'Paper' and computer chooses 'Paper', return 'You tied! let's replay another round' and 
-    call the same function to instruct the player to play the round again*/
+    OR user selects 'Paper' and computer chooses 'Paper', call the same function to instruct the player to play the round again*/
     else if (playerSelection === computerSelection) {
-        return 'You tied! Let\'s play another round';
+        playRound(playerSelection,computerSelection);
     }
     //If the user types in 'Rock' and computer chooses 'Paper', return 'You lose. Paper beats Rock'
     else if (playerSelection === 'rock' && computerSelection === 'paper') {
