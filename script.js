@@ -122,6 +122,7 @@ function game() {
         playRound(playerSelection,computerSelection);
     }
     //After all five rounds, print 'Score: score number'
+    console.log('Score: ' + score);
     //If the score is greater than 2, print 'You have won!'
     //If the score is less than 3, print 'You have lost!'
 }
