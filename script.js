@@ -110,7 +110,7 @@ function game() {
         score +=1;
     }
     //If player draws, add extra round for the player 
-    else if (playRound(playerSelection, computerSelection) === 'You tied! Let\'s play another round'e){
+    else if (playRound(playerSelection, computerSelection) === 'You tied! Let\'s play another round'){
         //encourage user to enter input case-insensitive
         playerSelection = prompt('R, P, S?');
         //encourage computer to return value
