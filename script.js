@@ -21,13 +21,16 @@ function getComputerChoice(){
 }
 //Add a variable that assigns the value of the computer's move
 let computerSelection = 'Scissors';
+
+//Initialize an existing variable for the player and enable the user to input the string value
+playerSelection = prompt('Enter "Rock", "Paper" and "Scissors"');
+
+//Enable the player to type in case-insensitive value
+playerSelection = playerSelection.toLowerCase();
+
 /* Add a function that will enable the player to play the round of Rock, Paper, Scissors by passing both the
 player and computer's input and returning the result for the player if they win, lose or tie */
-function playRound(playerSelection, computerSelection){
-    //Initialize an existing variable for the player and enable the user to input the string value
-    playerSelection = prompt('Enter "Rock", "Paper" and "Scissors"');
-    //Enable the player to type in case-insensitive value
-    playerSelection = playerSelection.toLowerCase();
+function playRound(playerSelection, computerSelection){    
     //If user types in 'Rock' and computer selects 'Scissors', return 'You win. Rock beats Scissors'
     if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
         return 'You win. Rock beats Scissors';
