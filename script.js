@@ -61,3 +61,5 @@ function playRound(playerSelection, computerSelection){
         return 'You lose. Scissors beats Paper';
     }    
 }
+/* Include a function that a player scores five rounds of the game. After 5 rounds, result is then displayed for the 
+player */
