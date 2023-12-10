@@ -21,7 +21,7 @@ function getComputerChoice(){
 }
 /* Add a function that will enable the player to play the round of Rock, Paper, Scissors by passing both the
 player and computer's input and returning the result for the player if they win, lose or tie */
-function playRound(){
+function playRound(playerSelection, computerSelection){
     //Initialize an existing variable for the player and enable the user to input the string value
     //Enable the player to type in case-insensitive value
     //If user types in 'Rock' and computer selects 'Scissors', return 'You win. Rock beats Scissors'
