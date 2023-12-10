@@ -19,7 +19,7 @@ function getComputerChoice(){
     //Return the variable inside the function
     return computerMove;
 }
-//Add a variable that assigns the return value of the getComputerChoice function
+//Add a variable that assigns the value of the computer's move
 /* Add a function that will enable the player to play the round of Rock, Paper, Scissors by passing both the
 player and computer's input and returning the result for the player if they win, lose or tie */
 function playRound(playerSelection, computerSelection){
