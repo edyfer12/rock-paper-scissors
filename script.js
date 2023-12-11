@@ -31,6 +31,7 @@ function playRound(playerSelection, computerSelection){
     if(playerSelection === 'rock' && computerSelection === 'Scissors' || 
     playerSelection === 'paper' && computerSelection === 'Rock' ||
     playerSelection === 'scissors' && computerSelection === 'Paper'){
+        playerScore++;
         return 'You Win!';
     }
     /*If the playerSelection is equal to 'rock' and computerSelection is equal to 'Paper', 
@@ -40,6 +41,7 @@ function playRound(playerSelection, computerSelection){
     else if (playerSelection === 'rock' && computerSelection === 'Paper' ||
     playerSelection === 'paper' && computerSelection === 'Scissors' ||
     playerSelection === 'scissors' && computerSelection === 'Rock') {
+        computerScore++;
         return 'You lose!';
     }
     //If the playerSelection has the same string as the computerSelection, return 'Tie!'
