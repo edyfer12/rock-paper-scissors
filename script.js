@@ -56,7 +56,9 @@ function game(){
     'Rock', 'Paper' and 'Scissors'*/
     let computerSelection = getComputerChoice();
     //Create a variable for the player score and set to 0
+    let playerScore = 0;
     //Create a variable for the computer score and set to 0
+    let computerScore = 0;
     //Invoke the play round function and display on console
     //If the player wins the first round, increment player score by 1
     //If the player loses the first round, increment computer score by 1
