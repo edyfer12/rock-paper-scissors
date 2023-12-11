@@ -50,6 +50,18 @@ either from the player or computer */
     //Create a variable for the player and assign the input as a value, 'rock, paper, scissors' case insensitive
     /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
     'Rock', 'Paper' and 'Scissors'*/
-    //Invoke the playRound function() five times
+    //Invoke the playRound function() 
+    //Encourage the player to type in input stored into existing variable
+    //Encourage the computer to return random strings and store into existing variable
+    //Invoke the playRound function() 
+    //Encourage the player to type in input stored into existing variable
+    //Encourage the computer to return random strings and store into existing variable
+    //Invoke the playRound function() 
+    //Encourage the player to type in input stored into existing variable
+    //Encourage the computer to return random strings and store into existing variable
+    //Invoke the playRound function() 
+    //Encourage the player to type in input stored into existing variable
+    //Encourage the computer to return random strings and store into existing variable
+    //Invoke the playRound function() 
     //If the player's score is 5, print to console 'Player wins the game'
     //If the computer's score is 5, print to console 'Computer wins the game' 
