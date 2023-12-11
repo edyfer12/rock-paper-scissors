@@ -69,19 +69,19 @@ function game(){
     //Encourage the computer to return random strings and store into existing variable
     computerSelection = getComputerChoice();
     //Invoke the playRound function() and print the invoked function to the console
-    playRound(playerSelection, computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
     //Encourage the player to type in input stored into existing variable
     playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase;
     //Encourage the computer to return random strings and store into existing variable
     computerSelection = getComputerChoice();
     //Invoke the playRound function() and print the invoked function to the console
-    playRound(playerSelection, computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
     //Encourage the player to type in input stored into existing variable
     playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase;
     //Encourage the computer to return random strings and store into existing variable
     computerSelection = getComputerChoice();
     //Invoke the playRound function() and print the invoked function to the console
-    playRound(playerSelection, computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
     //If the player's score is 5, print to console 'Player wins the game' and set player's and computer's score to 0
     //If the computer's score is 5, print to console 'Computer wins the game' and set player's and computer's score to 0
 }
