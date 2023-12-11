@@ -54,20 +54,30 @@ function playRound(playerSelection, computerSelection){
 either from the player or computer */
 function game(){
     //Create a variable for the player and assign the input as a value, 'rock, paper, scissors' case insensitive
+    let playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase;
     /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
     'Rock', 'Paper' and 'Scissors'*/
+    let computerSelection = getComputerChoice();
     //Invoke the playRound function() and print the invoked function to the console
     //Encourage the player to type in input stored into existing variable
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase;
     //Encourage the computer to return random strings and store into existing variable
+    computerSelection = getComputerChoice();
     //Invoke the playRound function() and print the invoked function to the console
     //Encourage the player to type in input stored into existing variable
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase;
     //Encourage the computer to return random strings and store into existing variable
+    computerSelection = getComputerChoice();
     //Invoke the playRound function() and print the invoked function to the console
     //Encourage the player to type in input stored into existing variable
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase;
     //Encourage the computer to return random strings and store into existing variable
+    computerSelection = getComputerChoice();
     //Invoke the playRound function() and print the invoked function to the console
     //Encourage the player to type in input stored into existing variable
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase;
     //Encourage the computer to return random strings and store into existing variable
+    computerSelection = getComputerChoice();
     //Invoke the playRound function() and print the invoked function to the console
     //If the player's score is 5, print to console 'Player wins the game' and set player's and computer's score to 0
     //If the computer's score is 5, print to console 'Computer wins the game' and set player's and computer's score to 0
