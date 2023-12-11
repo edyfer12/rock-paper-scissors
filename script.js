@@ -48,8 +48,7 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-/* Declare a function that enables both player and the computer to play the full game up to a score of 5 points
-either from the player or computer */
+/* Declare a function that enables both player and the computer to play the full game up to 5 rounds*/
 function game(){
     //Create a variable for the player and assign the input as a value, 'rock, paper, scissors' case insensitive
     let playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
@@ -58,4 +57,21 @@ function game(){
     let computerSelection = getComputerChoice();
     //Create a variable for the player score and set to 0
     //Create a variable for the computer score and set to 0
+    //Invoke the play round function and display on console
+    //If the player wins the first round, increment player score by 1
+    //If the player loses the first round, increment computer score by 1
+    //Invoke the play round function and display on console
+    //If the player wins the second round, increment player score by 1
+    //If the player loses the second round, increment computer score by 1
+    //Invoke the play round function and display on console
+    //If the player wins the third round, increment player score by 1
+    //If the player loses the third round, increment computer score by 1
+    //Invoke the play round function and display on console
+    //If the player wins the fourth round, increment player score by 1
+    //If the player loses the fourth round, increment computer score by 1
+    //Invoke the play round function and display on console
+    //If the player wins the fifth round, increment player score by 1
+    //If the player loses the fifth round, increment computer score by 1
+    //If the player scores five points, print to console, 'Player Won the Game!' and set both computer and player score to 0
+    //If the computer scores five points, print to console, 'Player Lost the Game!' and set both computer and player score to 0 
 }
