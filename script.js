@@ -63,7 +63,9 @@ function playRound(playerSelection, computerSelection){
 /* Include a function that a user plays five rounds of the game */
 function game() {
     //Declare a variable that stores score for the player and initialize to 0
+    let playerScore = 0;
     //Declare a variable that stores score for the computer and initialize to 0 
+    let computerScore = 0;
     
     //At first round, instruct the player to enter the input and enable the value to be case in-sensitive
     //Enable the computer to return random string values, 'Scissors', 'Paper' or 'Rock'
