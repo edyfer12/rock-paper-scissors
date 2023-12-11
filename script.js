@@ -114,5 +114,8 @@ function game() {
         //Increment the computer score by 1
     //If the computer ties with the player for the fifth round,
         //Increment both the value by 0
+    
+    //If the player scores 5 points, display 'Player Won the game!' on console
+    //If the computer scores 5 points, display 'Computer Won the game!' on console
 }
     
