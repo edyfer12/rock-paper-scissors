@@ -128,13 +128,19 @@ function game(){
     //If the player scores more than the computer, print to console, 'Player Won the Game!' and set both computer and player score to 0
     if(playerScore > computerScore){
         console.log(`Player Won the Game! (${playerScore} : ${computerScore})`);
+        playerScore = 0;
+        computerScore = 0;
     }
     //If the computer scores more than the player, print to console, 'Computer Won the Game!' and set both computer and player score to 0
     else if(computerScore < playerScore){
         console.log(`Computer Won the Game! (${computerScore} : ${playerScore})`);
+        playerScore = 0;
+        computerScore = 0;
     } 
     //If the player scores equally to the player, print to console, 'The game is tied!' and set both scores to 0
     else {
         console.log('The game is tied!');
+        playerScore = 0;
+        computerScore = 0;
     }
 }
