@@ -18,7 +18,8 @@ function getComputerChoice() {
     }
 }
 //Declare score variables for player and computer and set both to 0
-
+let playerScore = 0;
+let computerScore = 0;
 
 /* Declare a function that enables both the computer and player to play one round of the game 
 with two parameters passed, playerSelection and computerSelection */
