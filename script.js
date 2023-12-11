@@ -56,4 +56,6 @@ function game(){
     /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
     'Rock', 'Paper' and 'Scissors'*/
     let computerSelection = getComputerChoice();
+    //Create a variable for the player score and set to 0
+    //Create a variable for the computer score and set to 0
 }
