@@ -13,4 +13,7 @@ function getComputerChoice() {
         return 'Paper';
     }
     //If variable is 3, return 'Scissors'
+    else {
+        return 'Scissors';
+    }
 }
