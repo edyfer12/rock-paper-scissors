@@ -5,6 +5,9 @@ function getComputerChoice() {
     //Assign the variable to a random number value, multiplied by 3 all rounded up
     computerMove = Math.ceil(Math.random() * 3);
     //If variable is 1, return 'Rock'
+    if(computerMove == 1){
+        return 'Rock';
+    }
     //If variable is 2, return 'Paper'
     //If variable is 3, return 'Scissors'
 }
