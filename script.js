@@ -59,7 +59,13 @@ function game(){
     //Invoke the playRound function() and print the invoked function to the console
     console.log(playRound(playerSelection, computerSelection));
     //If playRound function returns 'You win', increment the player's score by 1
+    if(playRound(playerSelection, computerSelection) === 'You Win!'){
+        playerScore++;
+    }
     //If playRound function returns 'You lose', increment the computer's score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
     //Encourage the player to type in input stored into existing variable
     playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
     //Encourage the computer to return random strings and store into existing variable
@@ -67,7 +73,13 @@ function game(){
     //Invoke the playRound function() and print the invoked function to the console
     console.log(playRound(playerSelection, computerSelection));
     //If playRound function returns 'You win', increment the player's score by 1
+    if(playRound(playerSelection, computerSelection) === 'You Win!'){
+        playerScore++;
+    }
     //If playRound function returns 'You lose', increment the computer's score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
     //Encourage the player to type in input stored into existing variable
     playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
     //Encourage the computer to return random strings and store into existing variable
@@ -75,7 +87,13 @@ function game(){
     //Invoke the playRound function() and print the invoked function to the console
     console.log(playRound(playerSelection, computerSelection));
     //If playRound function returns 'You win', increment the player's score by 1
+    if(playRound(playerSelection, computerSelection) === 'You Win!'){
+        playerScore++;
+    }
     //If playRound function returns 'You lose', increment the computer's score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
     //Encourage the player to type in input stored into existing variable
     playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
     //Encourage the computer to return random strings and store into existing variable
@@ -83,7 +101,13 @@ function game(){
     //Invoke the playRound function() and print the invoked function to the console
     console.log(playRound(playerSelection, computerSelection));
     //If playRound function returns 'You win', increment the player's score by 1
+    if(playRound(playerSelection, computerSelection) === 'You Win!'){
+        playerScore++;
+    }
     //If playRound function returns 'You lose', increment the computer's score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
     //Encourage the player to type in input stored into existing variable
     playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
     //Encourage the computer to return random strings and store into existing variable
@@ -91,7 +115,13 @@ function game(){
     //Invoke the playRound function() and print the invoked function to the console
     console.log(playRound(playerSelection, computerSelection));
     //If playRound function returns 'You win', increment the player's score by 1
+    if(playRound(playerSelection, computerSelection) === 'You Win!'){
+        playerScore++;
+    }
     //If playRound function returns 'You lose', increment the computer's score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
     //If the player's score is 5, print to console 'Player wins the game' and set player's and computer's score to 0
     //If the computer's score is 5, print to console 'Computer wins the game' and set player's and computer's score to 0
 }
