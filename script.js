@@ -70,6 +70,7 @@ function game(){
         computerScore++;
     }
     //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
     //If the player wins the second round, increment player score by 1
     if(playRound(playerSelection,computerSelection)){
         playerScore++;
@@ -79,6 +80,7 @@ function game(){
         computerScore++;
     }
     //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
     //If the player wins the third round, increment player score by 1
     if(playRound(playerSelection,computerSelection)){
         playerScore++;
@@ -88,6 +90,7 @@ function game(){
         computerScore++;
     }
     //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
     //If the player wins the fourth round, increment player score by 1
     if(playRound(playerSelection,computerSelection)){
         playerScore++;
@@ -97,6 +100,7 @@ function game(){
         computerScore++;
     }
     //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
     //If the player wins the fifth round, increment player score by 1
     if(playRound(playerSelection,computerSelection)){
         playerScore++;
