@@ -37,7 +37,7 @@ function playRound(playerSelection, computerSelection){
     else if (playerSelection === 'rock' && computerSelection === 'Paper' ||
     playerSelection === 'paper' && computerSelection === 'Scissors' ||
     playerSelection === 'scissors' && computerSelection === 'Rock') {
-        return 'You lose';
+        return 'You lose!';
     }
     //If the playerSelection has the same string as the computerSelection, return 'Tie!'
     else {
