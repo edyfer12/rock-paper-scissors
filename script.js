@@ -27,7 +27,7 @@ function playRound(playerSelection, computerSelection){
     /*If the playerSelection is equal to 'rock' and computerSelection is equal to 'Scissors', 
     playerSelection is equal to 'paper' to computerSelection is equal to 'Rock' OR 
     playerSelection is equal to 'scissors' and computerSelection is equal to 'Paper', 
-    return 'You Win!'*/
+    increment player's score by 1 and return 'You Win!'*/
     if(playerSelection === 'rock' && computerSelection === 'Scissors' || 
     playerSelection === 'paper' && computerSelection === 'Rock' ||
     playerSelection === 'scissors' && computerSelection === 'Paper'){
@@ -37,7 +37,7 @@ function playRound(playerSelection, computerSelection){
     /*If the playerSelection is equal to 'rock' and computerSelection is equal to 'Paper', 
     playerSelection is equal to 'paper' to computerSelection is equal to 'Scissors' OR 
     playerSelection is equal to 'scissors' and computerSelection is equal to 'Rock',
-    return 'You Lose!'*/
+    increment computer's score by 1 and return 'You Lose!'*/
     else if (playerSelection === 'rock' && computerSelection === 'Paper' ||
     playerSelection === 'paper' && computerSelection === 'Scissors' ||
     playerSelection === 'scissors' && computerSelection === 'Rock') {
@@ -55,7 +55,7 @@ either from the player or computer */
     //Create a variable for the player and assign the input as a value, 'rock, paper, scissors' case insensitive
     /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
     'Rock', 'Paper' and 'Scissors'*/
-    //Invoke the playRound function() 
+    //Invoke the playRound function() and 
     //Encourage the player to type in input stored into existing variable
     //Encourage the computer to return random strings and store into existing variable
     //Invoke the playRound function() 
