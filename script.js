@@ -130,7 +130,7 @@ function game(){
         console.log(`Player Won the Game! (${playerScore} : ${computerScore})`);
     }
     //If the computer scores more than the player, print to console, 'Computer Won the Game!' and set both computer and player score to 0
-    else if(computerScore < playScore){
+    else if(computerScore < playerScore){
         console.log(`Computer Won the Game! (${computerScore} : ${playerScore})`);
     } 
 }
