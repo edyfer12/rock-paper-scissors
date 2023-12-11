@@ -67,7 +67,7 @@ function game() {
     
     //At first round, instruct the player to enter the input and enable the value to be case in-sensitive
     //Enable the computer to return random string values, 'Scissors', 'Paper' or 'Rock'
-    //For the first round, invoke the play round function
+    //For the first round, invoke the play round function and display the result on console
     //If the player wins the first round,
         //Increment the player score by 1
     //If the player loses the first round,
@@ -77,7 +77,7 @@ function game() {
 
     //At second round, instruct the player to enter the input and enable the value to be case in-sensitive
     //Enable the computer to return random string values, 'Scissors', 'Paper' or 'Rock'
-    //For the second round, invoke the play round function
+    //For the second round, invoke the play round function and display the result on console
     //If the player wins the second round,
         //Increment the player score by 1
     //If the player loses the second round,
@@ -87,7 +87,7 @@ function game() {
 
     //At third round, instruct the player to enter the input and enable the value to be case in-sensitive
     //Enable the computer to return random string values, 'Scissors', 'Paper' or 'Rock'
-    //For the third round, invoke the play round function
+    //For the third round, invoke the play round function and display the result on console
     //If the player wins the third round,
         //Increment the player score by 1
     //If the player loses the third round,
@@ -97,7 +97,7 @@ function game() {
 
     //At fourth round, instruct the player to enter the input and enable the value to be case in-sensitive
     //Enable the computer to return random string values, 'Scissors', 'Paper' or 'Rock'
-    //For the fourth round, invoke the play round function
+    //For the fourth round, invoke the play round function and display the result on console
     //If the player wins the fourth round,
         //Increment the player score by 1
     //If the player loses the fourth round,
@@ -107,7 +107,7 @@ function game() {
 
     //At fifth round, instruct the player to enter the input and enable the value to be case in-sensitive
     //Enable the computer to return random string values, 'Scissors', 'Paper' or 'Rock'
-    //For the fifth round, invoke the play round function
+    //For the fifth round, invoke the play round function and display the result on console
     //If the player wins the fifth round,
         //Increment the player score by 1
     //If the player loses the fifth round,
