@@ -52,6 +52,7 @@ function playRound(playerSelection, computerSelection){
 
 /* Declare a function that enables both player and the computer to play the full game up to a score of 5 points
 either from the player or computer */
+function game(){
     //Create a variable for the player and assign the input as a value, 'rock, paper, scissors' case insensitive
     /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
     'Rock', 'Paper' and 'Scissors'*/
@@ -70,3 +71,4 @@ either from the player or computer */
     //Invoke the playRound function() and print the invoked function to the console
     //If the player's score is 5, print to console 'Player wins the game' and set player's and computer's score to 0
     //If the computer's score is 5, print to console 'Computer wins the game' and set player's and computer's score to 0
+}
