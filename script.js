@@ -69,6 +69,10 @@ function game(){
     else if(playRound(playerSelection, computerSelection)){
         computerScore++;
     }
+    //Assign the input as a value, 'rock, paper, scissors' case insensitive
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    //Assign the getComputerChoice function call to return random strings,'Rock', 'Paper' and 'Scissors'
+    computerSelection = getComputerChoice();
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the second round, increment player score by 1
@@ -79,6 +83,10 @@ function game(){
     else if(playRound(playerSelection, computerSelection)){
         computerScore++;
     }
+    //Assign the input as a value, 'rock, paper, scissors' case insensitive
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    //Assign the getComputerChoice function call to return random strings,'Rock', 'Paper' and 'Scissors'
+    computerSelection = getComputerChoice();
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the third round, increment player score by 1
@@ -89,6 +97,10 @@ function game(){
     else if(playRound(playerSelection, computerSelection)){
         computerScore++;
     }
+    //Assign the input as a value, 'rock, paper, scissors' case insensitive
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    //Assign the getComputerChoice function call to return random strings,'Rock', 'Paper' and 'Scissors'
+    computerSelection = getComputerChoice();
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the fourth round, increment player score by 1
@@ -99,6 +111,10 @@ function game(){
     else if(playRound(playerSelection, computerSelection)){
         computerScore++;
     }
+    //Assign the input as a value, 'rock, paper, scissors' case insensitive
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    //Assign the getComputerChoice function call to return random strings,'Rock', 'Paper' and 'Scissors'
+    computerSelection = getComputerChoice();
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the fifth round, increment player score by 1
