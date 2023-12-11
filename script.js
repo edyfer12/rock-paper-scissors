@@ -56,7 +56,6 @@ function game(){
     /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
     'Rock', 'Paper' and 'Scissors'*/
     let computerSelection = getComputerChoice();
-    console.log('computerSelection: '+ computerSelection);
     //Invoke the playRound function() and print the invoked function to the console
     console.log(playRound(playerSelection, computerSelection));
     //Encourage the player to type in input stored into existing variable
