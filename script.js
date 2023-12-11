@@ -65,7 +65,9 @@ function game(){
     //If playRound function returns 'You lose', increment the computer's score by 1
     else if(playRound(playerSelection, computerSelection) === 'You lose!'){
         computerScore++;
-    }
+    } 
+    /*If playRound function returns 'Tie!', replay the round by encouraging player and computer to enter the inputs
+    until the user wins or loses against the computer*/
     //Encourage the player to type in input stored into existing variable
     playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
     //Encourage the computer to return random strings and store into existing variable
