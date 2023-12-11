@@ -68,5 +68,5 @@ either from the player or computer */
     //Encourage the player to type in input stored into existing variable
     //Encourage the computer to return random strings and store into existing variable
     //Invoke the playRound function() 
-    //If the player's score is 5, print to console 'Player wins the game'
-    //If the computer's score is 5, print to console 'Computer wins the game' 
+    //If the player's score is 5, print to console 'Player wins the game' and set player's and computer's score to 0
+    //If the computer's score is 5, print to console 'Computer wins the game' and set player's and computer's score to 0
