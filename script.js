@@ -9,5 +9,8 @@ function getComputerChoice() {
         return 'Rock';
     }
     //If variable is 2, return 'Paper'
+    else if(computerMove == 2){
+        return 'Paper';
+    }
     //If variable is 3, return 'Scissors'
 }
