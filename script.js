@@ -126,5 +126,8 @@ function game(){
         computerScore++;
     }
     //If the player scores five points, print to console, 'Player Won the Game!' and set both computer and player score to 0
+    if(playerScore == 5){
+        console.log(`Player Won the Game! (${playerScore} : ${computerScore})`);
+    }
     //If the computer scores five points, print to console, 'Player Lost the Game!' and set both computer and player score to 0 
 }
