@@ -62,11 +62,11 @@ function game(){
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the first round, increment player score by 1
-    if(playRound(playerSelection,computerSelection)){
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
         playerScore++;
     }
     //If the player loses the first round, increment computer score by 1
-    else if(playRound(playerSelection, computerSelection)){
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
         computerScore++;
     }
     //Assign the input as a value, 'rock, paper, scissors' case insensitive
@@ -76,11 +76,11 @@ function game(){
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the second round, increment player score by 1
-    if(playRound(playerSelection,computerSelection)){
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
         playerScore++;
     }
     //If the player loses the second round, increment computer score by 1
-    else if(playRound(playerSelection, computerSelection)){
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
         computerScore++;
     }
     //Assign the input as a value, 'rock, paper, scissors' case insensitive
@@ -90,11 +90,11 @@ function game(){
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the third round, increment player score by 1
-    if(playRound(playerSelection,computerSelection)){
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
         playerScore++;
     }
     //If the player loses the third round, increment computer score by 1
-    else if(playRound(playerSelection, computerSelection)){
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
         computerScore++;
     }
     //Assign the input as a value, 'rock, paper, scissors' case insensitive
@@ -104,11 +104,11 @@ function game(){
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the fourth round, increment player score by 1
-    if(playRound(playerSelection,computerSelection)){
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
         playerScore++;
     }
     //If the player loses the fourth round, increment computer score by 1
-    else if(playRound(playerSelection, computerSelection)){
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
         computerScore++;
     }
     //Assign the input as a value, 'rock, paper, scissors' case insensitive
@@ -118,11 +118,11 @@ function game(){
     //Invoke the play round function and display on console
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins the fifth round, increment player score by 1
-    if(playRound(playerSelection,computerSelection)){
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
         playerScore++;
     }
     //If the player loses the fifth round, increment computer score by 1
-    else if(playRound(playerSelection, computerSelection)){
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
         computerScore++;
     }
     //If the player scores five points, print to console, 'Player Won the Game!' and set both computer and player score to 0
