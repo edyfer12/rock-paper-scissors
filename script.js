@@ -27,7 +27,7 @@ function playRound(playerSelection, computerSelection){
     /*If the playerSelection is equal to 'rock' and computerSelection is equal to 'Scissors', 
     playerSelection is equal to 'paper' to computerSelection is equal to 'Rock' OR 
     playerSelection is equal to 'scissors' and computerSelection is equal to 'Paper', 
-    increment player's score by 1 and return 'You Win!'*/
+    return 'You Win!'*/
     if(playerSelection === 'rock' && computerSelection === 'Scissors' || 
     playerSelection === 'paper' && computerSelection === 'Rock' ||
     playerSelection === 'scissors' && computerSelection === 'Paper'){
@@ -36,7 +36,7 @@ function playRound(playerSelection, computerSelection){
     /*If the playerSelection is equal to 'rock' and computerSelection is equal to 'Paper', 
     playerSelection is equal to 'paper' to computerSelection is equal to 'Scissors' OR 
     playerSelection is equal to 'scissors' and computerSelection is equal to 'Rock',
-    increment computer's score by 1 and return 'You Lose!'*/
+    return 'You Lose!'*/
     else if (playerSelection === 'rock' && computerSelection === 'Paper' ||
     playerSelection === 'paper' && computerSelection === 'Scissors' ||
     playerSelection === 'scissors' && computerSelection === 'Rock') {
