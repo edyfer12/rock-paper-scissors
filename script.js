@@ -64,9 +64,13 @@ function game(){
     //Append the paragraph element for player created to the result class div element
     result.appendChild(paragraphPlayer);
     //Create paragraph element for computer
+    let paragraphComputer = document.createElement('p');
     //Add id attribute for the paragraph
+    paragraphComputer.id = 'computer';
     //Stylize the paragraph
+    paragraphComputer.style.cssText = 'display:inline-block; margin-right:50px;';
     //Append the paragraph element to the result class of div element
+    result.appendChild(paragraphComputer);
     //******************************ALGORITHMS TO PLAY THE GAME******************************************* */
 
     //Create variable called playerSelection that enable the player to make a choice
@@ -87,7 +91,7 @@ function game(){
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
-            paragraphPlayer.textContent = ++computerScore;
+            paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
 
     });
@@ -106,7 +110,7 @@ function game(){
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
-            paragraphPlayer.textContent = ++computerScore;
+            paragraphComputer.textContent = 'Computer Score: ' +  ++computerScore;
         }
 
     });
@@ -126,7 +130,7 @@ function game(){
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
-            paragraphPlayer.textContent = ++computerScore;
+            paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
 
 
