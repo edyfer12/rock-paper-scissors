@@ -64,13 +64,6 @@ function game(){
     //When the user clicks on the button named Scissors, invoke the play round function
     scissors.addEventListener('click', playRound(scissors.textContent.toLowerCase(), getComputerChoice));
 
-    /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
-    'Rock', 'Paper' and 'Scissors'*/
-    let computerSelection = getComputerChoice();
-    //Create a variable for the player score and set to 0
-    let playerScore = 0;
-    //Create a variable for the computer score and set to 0
-    let computerScore = 0;
     //Return the reference to the div element with results class
     let results = document.querySelector('.results'); 
     //Create a paragraph element for id being player using JS and store into variable created
