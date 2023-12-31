@@ -81,7 +81,7 @@ function game(){
 
     //*************************************************************************************************** */
 
-    //When the user clicks on the button named Rock, invoke the play round function
+    /*//When the user clicks on the button named Rock, invoke the play round function
     rock.addEventListener('click', playRound);
     //When the user clicks on the button named Paper, invoke the play round function
     paper.addEventListener('click', playRound);
@@ -132,7 +132,7 @@ function game(){
         console.log('The game is tied!');
         playerScore = 0;
         computerScore = 0;
-    }
+    }*/
 }
 
 //Declare score variables for player and computer and set both to 0
