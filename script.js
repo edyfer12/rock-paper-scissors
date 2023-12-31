@@ -48,5 +48,7 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+//Loop through three elements capturing the reference of each button based on id into variable created
+
 /* Add an event listener to each button that when any one of three of the buttons are clicked
  play one round against the computer*/
