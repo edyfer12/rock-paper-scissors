@@ -118,13 +118,14 @@ function game(){
         //Create a paragraph element 
         let paragraphPlayer = document.createElement('p');
         //Append the paragraph element created to the result class div element
+        result.appendChild(paragraphPlayer);
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
-            ++playerScore;
+            paragraphPlayer.textContent = ++playerScore;
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
-            ++computerScore;
+            paragraphPlayer.textContent = ++computerScore;
         }
 
 
