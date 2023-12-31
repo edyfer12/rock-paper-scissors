@@ -60,7 +60,11 @@ function game(){
     //Create a variable for the computer score and set to 0
     let computerScore = 0;
     //Create a paragraph element for id being player using JS and store into variable created
+    let paraPlayer = document.createElement('p');
+    paraPlayer.setAttribute('id', 'playerScore');
     //Create a paragraph element for id being computer using JS and store into variable created
+    let paraComputer = document.createElement('p');
+    paraComputer.setAttribute('id', 'computerScore');
     //Invoke the play round function and display on the paragraph on the results div element
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins, 
