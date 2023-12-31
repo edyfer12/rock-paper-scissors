@@ -50,9 +50,20 @@ function playRound(playerSelection, computerSelection){
 
 /* Declare a function that enables both player and the computer to play the full game up to 5 rounds*/
 function game(){
-    
+    //Capture reference for the button named Rock
+    let rock = document.querySelector('#rock');
+    //Capture reference for the button named Paper
+    let paper = document.querySelector('#paper');
+    //Capture reference for the button named Scissors
+    let scissors = document.querySelector('#scissors');
 
-    
+    //When the user clicks on the button named Rock, invoke the play round function
+    rock.addEventListener('click', playRound(rock.textContent.toLowerCase(), getComputerChoice));
+    //When the user clicks on the button named Paper, invoke the play round function
+    paper.addEventListener('click', playRound(paper.textContent.toLowerCase(), getComputerChoice));
+    //When the user clicks on the button named Scissors, invoke the play round function
+    scissors.addEventListener('click', playRound(scissors.textContent.toLowerCase(), getComputerChoice));
+
     /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
     'Rock', 'Paper' and 'Scissors'*/
     let computerSelection = getComputerChoice();
@@ -108,16 +119,3 @@ function game(){
     }
 }
 
-//Capture reference for the button named Rock
-let rock = document.querySelector('#rock');
-//Capture reference for the button named Paper
-let paper = document.querySelector('#paper');
-//Capture reference for the button named Scissors
-let scissors = document.querySelector('#scissors');
-
-//When the user clicks on the button named Rock, invoke the play round function
-rock.addEventListener('click', playRound(rock.textContent.toLowerCase(), getComputerChoice));
-//When the user clicks on the button named Paper, invoke the play round function
-paper.addEventListener('click', playRound(paper.textContent.toLowerCase(), getComputerChoice));
-//When the user clicks on the button named Scissors, invoke the play round function
-scissors.addEventListener('click', playRound(scissors.textContent.toLowerCase(), getComputerChoice));
