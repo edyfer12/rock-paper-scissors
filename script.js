@@ -48,6 +48,8 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+//Declare a function that will play the game of rock, paper and scissors that the player versus against the computer
+
 //Capture reference for the button named Rock
 let rock = document.querySelector('#rock');
 //Capture reference for the button named Paper
