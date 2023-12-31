@@ -114,3 +114,4 @@ let playerScore = 0;
 let computerScore = 0;
 
 //Invoke the function that enable the player to play the game
+game();
