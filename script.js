@@ -62,7 +62,7 @@ function game(){
     scissors.addEventListener('click', playRound(scissors.textContent.toLowerCase(), getComputerChoice));
 
     //Return the reference to the div element with results class
-    let results = document.querySelector('.result'); 
+    let result = document.querySelector('.result'); 
     //Create a paragraph element for id being player using JS and store into variable created
     let paraPlayer = document.createElement('p');
     paraPlayer.setAttribute('id', 'playerScore');
