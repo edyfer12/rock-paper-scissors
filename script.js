@@ -112,3 +112,5 @@ function game(){
 //Declare score variables for player and computer and set both to 0
 let playerScore = 0;
 let computerScore = 0;
+
+//Invoke the function that enable the player to play the game
