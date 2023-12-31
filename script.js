@@ -50,8 +50,9 @@ function playRound(playerSelection, computerSelection){
 
 /* Declare a function that enables both player and the computer to play the full game up to 5 rounds*/
 function game(){
-    //Create a variable for the player and assign the input as a value, 'rock, paper, scissors' case insensitive
-    let playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    
+
+    
     /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
     'Rock', 'Paper' and 'Scissors'*/
     let computerSelection = getComputerChoice();
