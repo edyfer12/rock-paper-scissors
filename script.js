@@ -49,5 +49,6 @@ function playRound(playerSelection, computerSelection){
 }
 
 //Create a variable that can store reference to all the three buttons at once
+let buttons = document.querySelectorAll('button');
 //Loop through each button one by one three times
     //For each button, add event listener that if the button is clicked, invoke the play round function
