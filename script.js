@@ -56,8 +56,8 @@ let paper = document.querySelector('#paper');
 let scissors = document.querySelector('#scissors');
 
 //When the user clicks on the button named Rock, invoke the play round function
-rock.addEventListener('click', playRound(rock.textContent, getComputerChoice));
+rock.addEventListener('click', playRound(rock.textContent.toLowerCase(), getComputerChoice));
 //When the user clicks on the button named Paper, invoke the play round function
-paper.addEventListener('click', playRound(paper.textContent, getComputerChoice));
+paper.addEventListener('click', playRound(paper.textContent.toLowerCase(), getComputerChoice));
 //When the user clicks on the button named Scissors, invoke the play round function
-scissors.addEventListener('click', playRound(scissors.textContent, getComputerChoice));
+scissors.addEventListener('click', playRound(scissors.textContent.toLowerCase(), getComputerChoice));
