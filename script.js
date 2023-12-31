@@ -45,9 +45,22 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-/* Declare the function that ends the game for both player and computer */
-//Set the player score to 0
-//Set the computer score to 0
+/* Declare the function that ends the game for both player and computer passing in player score and computer score*/
+function endGame(playerScore, computerScore){
+    //If player score is 5, notify the winner with alert, 'Player Wins the Game!'
+    if(playerScore === 5){
+        alert('Player Wins the Game!');
+    }
+    //If computer score is 5, notify the winner with alert, 'Computer Wins the Game!'
+    else if(computerScore === 5){
+        alert('Computer Wins the Game!');
+    }
+    //Set the player score to 0
+    playerScore = 0;
+    //Set the computer score to 0
+    computerScore = 0;
+}
+
 
 /* Declare a function that enables both player and the computer to play the full game up to 5 rounds*/
 function game(){
