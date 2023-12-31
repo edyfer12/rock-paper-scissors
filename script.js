@@ -48,7 +48,102 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-//Declare a function that will play the game of rock, paper and scissors that the player versus against the computer
+/* Declare a function that enables both player and the computer to play the full game up to 5 rounds*/
+function game(){
+    //Create a variable for the player and assign the input as a value, 'rock, paper, scissors' case insensitive
+    let playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    /*Create a variable for the computer and assign the getComputerChoice function call to return random strings,
+    'Rock', 'Paper' and 'Scissors'*/
+    let computerSelection = getComputerChoice();
+    //Create a variable for the player score and set to 0
+    let playerScore = 0;
+    //Create a variable for the computer score and set to 0
+    let computerScore = 0;
+    //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
+    //If the player wins the first round, increment player score by 1
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
+        playerScore++;
+    }
+    //If the player loses the first round, increment computer score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
+    //Assign the input as a value, 'rock, paper, scissors' case insensitive
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    //Assign the getComputerChoice function call to return random strings,'Rock', 'Paper' and 'Scissors'
+    computerSelection = getComputerChoice();
+    //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
+    //If the player wins the second round, increment player score by 1
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
+        playerScore++;
+    }
+    //If the player loses the second round, increment computer score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
+    //Assign the input as a value, 'rock, paper, scissors' case insensitive
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    //Assign the getComputerChoice function call to return random strings,'Rock', 'Paper' and 'Scissors'
+    computerSelection = getComputerChoice();
+    //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
+    //If the player wins the third round, increment player score by 1
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
+        playerScore++;
+    }
+    //If the player loses the third round, increment computer score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
+    //Assign the input as a value, 'rock, paper, scissors' case insensitive
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    //Assign the getComputerChoice function call to return random strings,'Rock', 'Paper' and 'Scissors'
+    computerSelection = getComputerChoice();
+    //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
+    //If the player wins the fourth round, increment player score by 1
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
+        playerScore++;
+    }
+    //If the player loses the fourth round, increment computer score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
+    //Assign the input as a value, 'rock, paper, scissors' case insensitive
+    playerSelection = prompt('Rock, Paper, or Scissors').toLowerCase();
+    //Assign the getComputerChoice function call to return random strings,'Rock', 'Paper' and 'Scissors'
+    computerSelection = getComputerChoice();
+    //Invoke the play round function and display on console
+    console.log(playRound(playerSelection, computerSelection));
+    //If the player wins the fifth round, increment player score by 1
+    if(playRound(playerSelection,computerSelection) === 'You Win!'){
+        playerScore++;
+    }
+    //If the player loses the fifth round, increment computer score by 1
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
+        computerScore++;
+    }
+    //If the player scores more than the computer, print to console, 'Player Won the Game!' and set both computer and player score to 0
+    if(playerScore > computerScore){
+        console.log(`Player Won the Game! (${playerScore} : ${computerScore})`);
+        playerScore = 0;
+        computerScore = 0;
+    }
+    //If the computer scores more than the player, print to console, 'Computer Won the Game!' and set both computer and player score to 0
+    else if(computerScore > playerScore){
+        console.log(`Computer Won the Game! (${computerScore} : ${playerScore})`);
+        playerScore = 0;
+        computerScore = 0;
+    } 
+    //If the player scores equally to the player, print to console, 'The game is tied!' and set both scores to 0
+    else {
+        console.log('The game is tied!');
+        playerScore = 0;
+        computerScore = 0;
+    }
+}
 
 //Capture reference for the button named Rock
 let rock = document.querySelector('#rock');
