@@ -55,9 +55,13 @@ function game(){
     let scissors = document.querySelector('#scissors');
     //Capture reference for the result class of the div element
     let result = document.querySelector('.result');
-    //Create a paragraph element 
+    //Create a paragraph element for player
     let paragraphPlayer = document.createElement('p');
-    //Append the paragraph element created to the result class div element
+    //Add id attribute for the paragraphPlayer
+    paragraphPlayer.id = 'player';
+    //Stylize the paragraph that displays player score
+    paragraphPlayer.style.cssText = 'display:inline-block; margin-top:10px;';
+    //Append the paragraph element for player created to the result class div element
     result.appendChild(paragraphPlayer);
     //******************************ALGORITHMS TO PLAY THE GAME******************************************* */
 
@@ -75,7 +79,7 @@ function game(){
        
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
-            paragraphPlayer.textContent = ++playerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
@@ -94,7 +98,7 @@ function game(){
         playRound(playerSelection,computerSelection);
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
-            paragraphPlayer.textContent = ++playerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
@@ -111,10 +115,10 @@ function game(){
         let computerSelection = getComputerChoice();
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
-        
+
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
-            paragraphPlayer.textContent = ++playerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
