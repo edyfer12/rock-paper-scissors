@@ -60,6 +60,7 @@ function game(){
     //Create a variable for the computer score and set to 0
     let computerScore = 0;
     //Return the reference to the div element with results class
+    let results = document.querySelector('.results'); 
     //Create a paragraph element for id being player using JS and store into variable created
     let paraPlayer = document.createElement('p');
     paraPlayer.setAttribute('id', 'playerScore');
