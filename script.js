@@ -55,11 +55,11 @@ function game(){
     let scissors = document.querySelector('#scissors');
 
     //When the user clicks on the button named Rock, invoke the play round function
-    rock.addEventListener('click', playRound(rock.textContent.toLowerCase(), getComputerChoice));
+    rock.addEventListener('click', playRound);
     //When the user clicks on the button named Paper, invoke the play round function
-    paper.addEventListener('click', playRound(paper.textContent.toLowerCase(), getComputerChoice));
+    paper.addEventListener('click', playRound);
     //When the user clicks on the button named Scissors, invoke the play round function
-    scissors.addEventListener('click', playRound(scissors.textContent.toLowerCase(), getComputerChoice));
+    scissors.addEventListener('click', playRound);
 
     //Return the reference to the div element with results class
     let result = document.querySelector('.result'); 
@@ -69,8 +69,7 @@ function game(){
     //Create a paragraph element for id being computer using JS and store into variable created
     let paraComputer = document.createElement('p');
     paraComputer.setAttribute('id', 'computerScore');
-    //Invoke the play round function and display on the paragraph on the results div element
-    console.log(playRound(playerSelection, computerSelection));
+
     //If the player wins, 
     if(playRound(playerSelection, computerSelection) === 'You Win!'){
         //Increment the player score by 1 in prefix form
@@ -81,7 +80,7 @@ function game(){
         result.appendChild(paraPlayer);
     }
     //If the computer wins,
-    else if(playRound(playerSelection, computerSelection) === 'You Lose!'){
+    else if(playRound(playerSelection, computerSelection) === 'You lose!'){
         //Increment the computer score by 1 in prefix form
         ++computerScore;
         //Set the text content for paragraph where id is computer to computer score incremented by 1
