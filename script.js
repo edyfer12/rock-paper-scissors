@@ -48,5 +48,10 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-//Create a variable that can store reference to all the three buttons at once
-let buttons = document.querySelectorAll('button');
+//Capture reference for the button named Rock
+//Capture reference for the button named Paper
+//Capture reference for the button named Scissors
+
+//When the user clicks on the button named Rock, invoke the play round function
+//When the user clicks on the button named Paper, invoke the play round function
+//When the user clicks on the button named Scissors, invoke the play round function
