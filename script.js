@@ -59,9 +59,18 @@ function game(){
     let playerScore = 0;
     //Create a variable for the computer score and set to 0
     let computerScore = 0;
-    //Invoke the play round function and display on the results div
+    //Create a paragraph element for id being player using JS and store into variable created
+    //Create a paragraph element for id being computer using JS and store into variable created
+    //Invoke the play round function and display on the paragraph on the results div element
     console.log(playRound(playerSelection, computerSelection));
-    
+    //If the player wins, 
+        //Increment the player score by 1 in prefix form
+        //Set the text content for paragraph where id is player to player score incremented by 1
+        //Append the paragraph element where id being player to the results div element
+    //If the computer wins,
+        //Increment the computer score by 1 in prefix form
+        //Set the text content for paragraph where id is computer to computer score incremented by 1
+        //Append the paragraph element where id being computer to the results div element
     //If the player scores more than the computer, print to console, 'Player Won the Game!' and set both computer and player score to 0
     if(playerScore > computerScore){
         console.log(`Player Won the Game! (${playerScore} : ${computerScore})`);
