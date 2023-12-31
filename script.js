@@ -84,7 +84,6 @@ function startGame(){
     paragraphComputer.style.cssText = 'display:inline-block; margin-right:50px;';
     //Append the paragraph element to the result class of div element
     result.appendChild(paragraphComputer);
-    //******************************ALGORITHMS TO PLAY THE GAME******************************************* */
 
     //Create variable called playerSelection that enable the player to make a choice
     let playerSelection;
@@ -171,7 +170,6 @@ function startGame(){
             paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         }
     });
-    //*************************************************************************************************** */
 }
 
 //Declare score variables for player and computer and set both to 0
