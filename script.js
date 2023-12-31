@@ -54,8 +54,32 @@ function game(){
     //Capture reference for the button named Scissors
     let scissors = document.querySelector('#scissors');
 
-    //Create variable called playerSelection
+    //******************************ALGORITHMS TO PLAY THE GAME******************************************* */
+
+    //Create variable called playerSelection that enable the player to make a choice
+
+    //If the player clicks the Rock button, store the text value of Rock button into playerSelection variable
+
+    //If the player clicks the Paper button, store the text value of Paper button into the playerSelection variable
+
+    //If the player clicks the Scissors button, store the text value of Scissors button into the playerSelection variable
+
+    //Create variable called computerSelection that enable the computer to make a choice
+
+    //Store the return value of the computerChoice function into the computerSelection variable
     
+    //Play the round after both player and computer selects the input
+
+    //If the player wins the round, add player score by 1 and display the added score for player
+
+    //If the player loses the round, add computer score by 1 and display the added score for computer
+
+    //If the player reaches 5 points and player score is higher than computer, display 'Player Wins!'
+
+    //If the computer reaches 5 points and computer score is higher than player, display 'Computer Wins!'
+
+
+    //*************************************************************************************************** */
 
     //When the user clicks on the button named Rock, invoke the play round function
     rock.addEventListener('click', playRound);
