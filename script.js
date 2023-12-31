@@ -62,7 +62,7 @@ function game(){
     scissors.addEventListener('click', playRound(scissors.textContent.toLowerCase(), getComputerChoice));
 
     //Return the reference to the div element with results class
-    let results = document.querySelector('.results'); 
+    let results = document.querySelector('.result'); 
     //Create a paragraph element for id being player using JS and store into variable created
     let paraPlayer = document.createElement('p');
     paraPlayer.setAttribute('id', 'playerScore');
@@ -78,7 +78,7 @@ function game(){
         //Set the text content for paragraph where id is player to player score incremented by 1
         paraPlayer.textContent = playerScore;
         //Append the paragraph element where id being player to the results div element
-        results.appendChild(paraPlayer);
+        result.appendChild(paraPlayer);
     }
     //If the computer wins,
     else if(playRound(playerSelection, computerSelection) === 'You Lose!'){
@@ -87,7 +87,7 @@ function game(){
         //Set the text content for paragraph where id is computer to computer score incremented by 1
         paraComputer.textContent = computerScore;
         //Append the paragraph element where id being computer to the results div element
-        results.appendChild(paraComputer);
+        result.appendChild(paraComputer);
     }
     //If the player scores more than the computer, print to console, 'Player Won the Game!' and set both computer and player score to 0
     if(playerScore > computerScore){
