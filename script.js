@@ -53,6 +53,8 @@ function game(){
     let paper = document.querySelector('#paper');
     //Capture reference for the button named Scissors
     let scissors = document.querySelector('#scissors');
+    //Capture reference for the result class of the div element
+    let result = document.querySelector('.result');
 
     //******************************ALGORITHMS TO PLAY THE GAME******************************************* */
 
@@ -68,14 +70,16 @@ function game(){
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
         //Create a paragraph element 
+        let paragraphPlayer = document.createElement('p');
         //Append the paragraph element created to the result class div element
+        result.appendChild(paragraphPlayer);
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
-            playerScore++;
+            paragraphPlayer.textContent = ++playerScore;
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
-            computerScore++;
+            paragraphPlayer.textContent = ++computerScore;
         }
 
     });
@@ -89,14 +93,16 @@ function game(){
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
         //Create a paragraph element 
+        let paragraphPlayer = document.createElement('p');
         //Append the paragraph element created to the result class div element
+        result.appendChild(paragraphPlayer);
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
-            playerScore++;
+            paragraphPlayer.textContent = ++playerScore;
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
-            computerScore++;
+            paragraphPlayer.textContent = ++computerScore;
         }
 
     });
@@ -110,14 +116,15 @@ function game(){
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
         //Create a paragraph element 
+        let paragraphPlayer = document.createElement('p');
         //Append the paragraph element created to the result class div element
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
-            playerScore++;
+            ++playerScore;
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
-            computerScore++;
+            ++computerScore;
         }
 
 
