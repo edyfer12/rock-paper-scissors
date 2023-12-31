@@ -54,6 +54,8 @@ function game(){
     //Capture reference for the button named Scissors
     let scissors = document.querySelector('#scissors');
 
+    //Create variable called playerSelection
+
     //When the user clicks on the button named Rock, invoke the play round function
     rock.addEventListener('click', playRound);
     //When the user clicks on the button named Paper, invoke the play round function
