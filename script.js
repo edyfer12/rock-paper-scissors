@@ -136,7 +136,9 @@ function game(){
 
     });
 
-    
+    //Save the player score into variable created
+
+    //Save the computer score into variable created
 
     //If the player reaches 5 points and player score is higher than computer, display 'Player Wins!'
 
