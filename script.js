@@ -49,8 +49,11 @@ function playRound(playerSelection, computerSelection){
 }
 
 //Capture reference for the button named Rock
+let rock = document.querySelector('#rock');
 //Capture reference for the button named Paper
+let paper = document.querySelector('#paper');
 //Capture reference for the button named Scissors
+let scissors = document.querySelector('#scissors');
 
 //When the user clicks on the button named Rock, invoke the play round function
 //When the user clicks on the button named Paper, invoke the play round function
