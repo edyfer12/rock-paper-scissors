@@ -45,6 +45,10 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+/* Declare the function that ends the game for both player and computer */
+//Set the player score to 0
+//Set the computer score to 0
+
 /* Declare a function that enables both player and the computer to play the full game up to 5 rounds*/
 function game(){
     //Capture reference for the button named Rock
@@ -93,10 +97,9 @@ function game(){
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
-        
-        //If the player score 5 points, notify the player as the winner and end the game
-        if(playerScore === 5){
-            alert('Player Wins the Game')
+
+        //If the player or computer score 5 points, end the game
+        if(playerScore === 5 || computerScore === 5){
             endGame();
         }
     });
@@ -118,9 +121,8 @@ function game(){
             paragraphComputer.textContent = 'Computer Score: ' +  ++computerScore;
         }
 
-        //If the player score 5 points, notify the player as the winner and end the game
-        if(playerScore === 5){
-            alert('Player Wins the Game')
+        //If the player or computer score 5 points, end the game
+        if(playerScore === 5 || playerScore === 5){
             endGame();
         }
     });
@@ -143,9 +145,8 @@ function game(){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
 
-        //If the player score 5 points, notify the player as the winner and end the game
-        if(playerScore === 5){
-            alert('Player Wins the Game')
+        //If the player or computer score 5 points, notify the player as the winner and end the game
+        if(playerScore === 5 || computerScore === 5){
             endGame();
         }
     });
