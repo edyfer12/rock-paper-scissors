@@ -59,30 +59,51 @@ function game(){
     //Create variable called playerSelection that enable the player to make a choice
     let playerSelection;
 
-    //If the player clicks the Rock button, store the text value of Rock button into playerSelection variable
+    //If the player clicks the Rock button,
     rock.addEventListener('click', () => {
+        //Store the text value of Rock button into playerSelection variable
         playerSelection = rock.textContent.toLowerCase();
-    });
-
-    //If the player clicks the Paper button, store the text value of Paper button into the playerSelection variable
-    paper.addEventListener('click', () =>{
-        playerSelection = paper.textContent.toLowerCase();
-    });
-
-    //If the player clicks the Scissors button, store the text value of Scissors button into the playerSelection variable
-    scissors.addEventListener('click', () => {
-        playerSelection = paper.textContent.toLowerCase();
-    });
-
-    //Create variable called computerSelection that enable the computer to make a choice
-
-    //Store the return value of the computerChoice function into the computerSelection variable
+        //Create variable called computerSelection that enable the computer to make a choice
+        let computerSelection = getComputerChoice();
+        //Store the return value of the computerChoice function into the computerSelection variable
     
-    //Play the round after both player and computer selects the input
+        //Play the round after both player and computer selects the input
+        //If the player wins the round, add player score by 1 and display the added score for player
 
-    //If the player wins the round, add player score by 1 and display the added score for player
+        //If the player loses the round, add computer score by 1 and display the added score for computer
 
-    //If the player loses the round, add computer score by 1 and display the added score for computer
+    });
+
+    //If the player clicks the Paper button, 
+    paper.addEventListener('click', () =>{
+        //Store the text value of Paper button into the playerSelection variable
+        playerSelection = paper.textContent.toLowerCase();
+        //Create variable called computerSelection that enable the computer to make a choice
+        //Store the return value of the computerChoice function into the computerSelection variable
+    
+        //Play the round after both player and computer selects the input
+        //If the player wins the round, add player score by 1 and display the added score for player
+
+        //If the player loses the round, add computer score by 1 and display the added score for computer
+
+    });
+
+    //If the player clicks the Scissors button, 
+    scissors.addEventListener('click', () => {
+        //Store the text value of Scissors button into the playerSelection variable
+        playerSelection = paper.textContent.toLowerCase();
+        //Create variable called computerSelection that enable the computer to make a choice
+        //Store the return value of the computerChoice function into the computerSelection variable
+    
+        //Play the round after both player and computer selects the input
+        //If the player wins the round, add player score by 1 and display the added score for player
+
+        //If the player loses the round, add computer score by 1 and display the added score for computer
+
+
+    });
+
+    
 
     //If the player reaches 5 points and player score is higher than computer, display 'Player Wins!'
 
