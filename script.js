@@ -63,7 +63,7 @@ function endGame(playerScore, computerScore){
 
 
 /* Declare a function that enables both player and the computer to play the full game up to 5 rounds*/
-function game(){
+function startGame(){
     //Capture reference for the button named Rock
     let rock = document.querySelector('#rock');
     //Capture reference for the button named Paper
@@ -227,4 +227,4 @@ let playerScore = 0;
 let computerScore = 0;
 
 //Invoke the function that enable the player to play the game
-game();
+startGame();
