@@ -135,13 +135,7 @@ function game(){
 
 
     });
-
-    //Save the player score into variable created
-    let playerScore = paragraphPlayer.textContent;
-
-    //Save the computer score into variable created
-    let computerScore = paragraphComputer.textContent;
-
+    
     /*If the player reaches 5 points and player score is higher than computer, display 'Player Wins!' and end the game with 
     player score and computer score set to 0*/
     if(playerScore === 5){
