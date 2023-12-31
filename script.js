@@ -57,12 +57,22 @@ function game(){
     //******************************ALGORITHMS TO PLAY THE GAME******************************************* */
 
     //Create variable called playerSelection that enable the player to make a choice
+    let playerSelection;
 
     //If the player clicks the Rock button, store the text value of Rock button into playerSelection variable
+    rock.addEventListener('click', () => {
+        playerSelection = rock.textContent.toLowerCase();
+    });
 
     //If the player clicks the Paper button, store the text value of Paper button into the playerSelection variable
+    paper.addEventListener('click', () =>{
+        playerSelection = paper.textContent.toLowerCase();
+    });
 
     //If the player clicks the Scissors button, store the text value of Scissors button into the playerSelection variable
+    scissors.addEventListener('click', () => {
+        playerSelection = paper.textContent.toLowerCase();
+    });
 
     //Create variable called computerSelection that enable the computer to make a choice
 
