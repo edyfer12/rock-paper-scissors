@@ -56,6 +56,8 @@ function game(){
 
     //Create variable called playerSelection
 
+    //If user clicks on the button Rock, set the value of the playerSelection as name of the button case-insensitive 
+
     //When the user clicks on the button named Rock, invoke the play round function
     rock.addEventListener('click', playRound);
     //When the user clicks on the button named Paper, invoke the play round function
