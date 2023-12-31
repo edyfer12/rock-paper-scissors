@@ -68,6 +68,7 @@ function startGame(){
     let scissors = document.querySelector('#scissors');
     //Capture reference for the result class of the div element
     let result = document.querySelector('.result');
+
     //Create a paragraph element for player
     let paragraphPlayer = document.createElement('p');
     //Add id attribute for the paragraphPlayer
@@ -76,6 +77,7 @@ function startGame(){
     paragraphPlayer.style.cssText = 'display:inline-block; margin-top:10px;';
     //Append the paragraph element for player created to the result class div element
     result.appendChild(paragraphPlayer);
+    
     //Create paragraph element for computer
     let paragraphComputer = document.createElement('p');
     //Add id attribute for the paragraph
