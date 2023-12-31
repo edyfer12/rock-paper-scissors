@@ -55,10 +55,6 @@ function endGame(playerScore, computerScore){
     else if(computerScore === 5){
         alert('Computer Wins the Game!');
     }
-    //Set the player score to 0
-    playerScore = 0;
-    //Set the computer score to 0
-    computerScore = 0;
 }
 
 
@@ -111,9 +107,13 @@ function startGame(){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
 
-        //If the player or computer score 5 points, end the game
+        //If the player or computer score 5 points, end the game and reset the scores
         if(playerScore === 5 || computerScore === 5){
             endGame(playerScore,computerScore);
+            playerScore = 0;
+            computerScore = 0;
+            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         }
     });
 
@@ -134,9 +134,13 @@ function startGame(){
             paragraphComputer.textContent = 'Computer Score: ' +  ++computerScore;
         }
 
-        //If the player or computer score 5 points, end the game
+        //If the player or computer score 5 points, end the game and reset the scores
         if(playerScore === 5 || computerScore === 5){
             endGame(playerScore,computerScore);
+            playerScore = 0;
+            computerScore = 0;
+            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         }
     });
 
@@ -158,9 +162,13 @@ function startGame(){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
 
-        //If the player or computer score 5 points, notify the player as the winner and end the game
+        //If the player or computer score 5 points, end the game and reset the scores
         if(playerScore === 5 || computerScore === 5){
             endGame(playerScore, computerScore);
+            computerScore = 0;
+            playerScore = 0;
+            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         }
     });
     //*************************************************************************************************** */
