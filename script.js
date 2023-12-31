@@ -107,7 +107,7 @@ function startGame(){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
 
-        //If the player or computer score 5 points, end the game and reset the scores
+        //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
             endGame(playerScore,computerScore);
             playerScore = 0;
@@ -134,7 +134,7 @@ function startGame(){
             paragraphComputer.textContent = 'Computer Score: ' +  ++computerScore;
         }
 
-        //If the player or computer score 5 points, end the game and reset the scores
+        //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
             endGame(playerScore,computerScore);
             playerScore = 0;
@@ -162,7 +162,7 @@ function startGame(){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
 
-        //If the player or computer score 5 points, end the game and reset the scores
+        //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
             endGame(playerScore, computerScore);
             computerScore = 0;
