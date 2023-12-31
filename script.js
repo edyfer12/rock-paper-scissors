@@ -63,6 +63,10 @@ function game(){
     paragraphPlayer.style.cssText = 'display:inline-block; margin-top:10px;';
     //Append the paragraph element for player created to the result class div element
     result.appendChild(paragraphPlayer);
+    //Create paragraph element for computer
+    //Add id attribute for the paragraph
+    //Stylize the paragraph
+    //Append the paragraph element to the result class of div element
     //******************************ALGORITHMS TO PLAY THE GAME******************************************* */
 
     //Create variable called playerSelection that enable the player to make a choice
