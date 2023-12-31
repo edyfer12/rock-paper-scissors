@@ -65,8 +65,6 @@ function game(){
         playerSelection = rock.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
         let computerSelection = getComputerChoice();
-        //Store the return value of the computerChoice function into the computerSelection variable
-    
         //Play the round after both player and computer selects the input
         //If the player wins the round, add player score by 1 and display the added score for player
 
@@ -79,7 +77,6 @@ function game(){
         //Store the text value of Paper button into the playerSelection variable
         playerSelection = paper.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
-        //Store the return value of the computerChoice function into the computerSelection variable
     
         //Play the round after both player and computer selects the input
         //If the player wins the round, add player score by 1 and display the added score for player
@@ -93,7 +90,6 @@ function game(){
         //Store the text value of Scissors button into the playerSelection variable
         playerSelection = paper.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
-        //Store the return value of the computerChoice function into the computerSelection variable
     
         //Play the round after both player and computer selects the input
         //If the player wins the round, add player score by 1 and display the added score for player
