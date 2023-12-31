@@ -68,13 +68,21 @@ function game(){
     //Invoke the play round function and display on the paragraph on the results div element
     console.log(playRound(playerSelection, computerSelection));
     //If the player wins, 
+    if(playRound(playerSelection, computerSelection) === 'You Win!'){
         //Increment the player score by 1 in prefix form
+        ++playerScore;
         //Set the text content for paragraph where id is player to player score incremented by 1
+        paraPlayer.textContent = playerScore;
         //Append the paragraph element where id being player to the results div element
+    }
     //If the computer wins,
+    else if(playRound(playerSelection, computerSelection) === 'You Lose!'){
         //Increment the computer score by 1 in prefix form
+        ++computerScore;
         //Set the text content for paragraph where id is computer to computer score incremented by 1
+        paraComputer.textContent = computerScore;
         //Append the paragraph element where id being computer to the results div element
+    }
     //If the player scores more than the computer, print to console, 'Player Won the Game!' and set both computer and player score to 0
     if(playerScore > computerScore){
         console.log(`Player Won the Game! (${playerScore} : ${computerScore})`);
