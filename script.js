@@ -67,6 +67,8 @@ function game(){
         let computerSelection = getComputerChoice();
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
+        //Create a paragraph element 
+        //Append the paragraph element created to the result class div element
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             playerScore++;
@@ -86,6 +88,8 @@ function game(){
         let computerSelection = getComputerChoice();
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
+        //Create a paragraph element 
+        //Append the paragraph element created to the result class div element
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             playerScore++;
@@ -105,6 +109,8 @@ function game(){
         let computerSelection = getComputerChoice();
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
+        //Create a paragraph element 
+        //Append the paragraph element created to the result class div element
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             playerScore++;
