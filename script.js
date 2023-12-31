@@ -47,3 +47,6 @@ function playRound(playerSelection, computerSelection){
         return 'Tie!';
     }
 }
+
+/* Add an event listener to each button that when any one of three of the buttons are clicked
+ play one round against the computer*/
