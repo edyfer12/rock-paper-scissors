@@ -81,15 +81,22 @@ function startGame(){
     //Set an id to announce for the paragraph element to avoid overlapping other paragraph elements
     paragraphAnnounce.id = 'announce';
     //Append the paragraph element to the result class of div element to make an element appear
-    result.appendChild(paragraphAnnounce);
-    //Display the announcement message as empty as the game is reset or is a new game
-    paragraphAnnounce.textContent = '';
+    result.appendChild(paragraphAnnounce);  
 
     //Create variable called playerSelection that enable the player to make a choice
     let playerSelection;
 
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {
+        //If the score is more than 5 points from player or the computer after is clicked, reset the scores
+        if(playerScore >= 5 || computerScore >= 5){
+            //Reset the scores to restart game
+            playerScore = 0;
+            computerScore = 0;
+            //Display the announcement message as empty as the game is reset or is a new game
+            paragraphAnnounce.textContent = '';
+            //Display the scores as both 0 for player and computer
+        } 
         //Store the text value of Rock button into playerSelection variable
         playerSelection = rock.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
@@ -107,10 +114,7 @@ function startGame(){
         }
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
-        if(playerScore === 5 || computerScore === 5){         
-            //Display the scores to the user to see the results
-            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
-            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
+        if(playerScore === 5 || computerScore === 5){          
             //Announce the winner. If the player wins, display this message
             if(playerScore === 5){
                 paragraphAnnounce.textContent = 'Player Wins the Game!';
@@ -119,9 +123,6 @@ function startGame(){
             else if(computerScore === 5) {
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
-             //Reset the scores
-            playerScore = 0;
-            computerScore = 0; 
             //Display the scores to the user to see the results
             paragraphComputer.textContent = 'Computer Score: ' + computerScore;
             paragraphPlayer.textContent = 'Player Score: ' + playerScore;
