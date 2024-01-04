@@ -90,15 +90,22 @@ function startGame(){
     paragraphComputer.textContent = 'Computer Score: ' + computerScore;
     paragraphPlayer.textContent = 'Player Score: ' + playerScore;
     //If the player clicks the Rock button,
-    rock.addEventListener('click', () => {
+    rock.addEventListener('click', () => {  
         //Display the announcement message as empty as the game is reset or is a new game
-        paragraphAnnounce.textContent = '';
-
+        paragraphAnnounce.textContent = ''; 
         //Store the text value of Rock button into playerSelection variable
         playerSelection = rock.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
         let computerSelection = getComputerChoice();
-       
+
+        //Reset and display the scores to 0 if player score or computer score is equal to 5 and end the game
+        if(playerScore === 5 || computerScore === 5){
+            playerScore = 0;
+            computerScore = 0;
+            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
+            return false;
+        }       
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
@@ -118,11 +125,6 @@ function startGame(){
             else if(computerScore === 5) {
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
-            //Reset the scores to 0
-            playerScore = 0;
-            computerScore = 0;
-            //paragraphComputer.textContent = 'Computer Score: ' + computerScore;
-            
         }
     });
 
