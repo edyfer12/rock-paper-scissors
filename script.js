@@ -80,6 +80,7 @@ function startGame(){
     let paragraphAnnounce = document.createElement('p');
     //Set an id to announce for the paragraph element to avoid overlapping other paragraph elements
     paragraphAnnounce.id = 'announce';
+    //Stylize the announce id for the paragraph
     //Append the paragraph element to the result class of div element to make an element appear
     result.appendChild(paragraphAnnounce);  
 
