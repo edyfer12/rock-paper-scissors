@@ -107,7 +107,7 @@ function startGame(){
         }
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
-        if(playerScore === 5 || computerScore === 5){    
+        if(playerScore === 5 || computerScore === 5){         
             //Display the scores to the user to see the results
             paragraphComputer.textContent = 'Computer Score: ' + computerScore;
             paragraphPlayer.textContent = 'Player Score: ' + playerScore;
@@ -119,9 +119,12 @@ function startGame(){
             else if(computerScore === 5) {
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
-            //Reset the scores
+             //Reset the scores
             playerScore = 0;
-            computerScore = 0;
+            computerScore = 0; 
+            //Display the scores to the user to see the results
+            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         }
     });
 
