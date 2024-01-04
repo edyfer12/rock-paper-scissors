@@ -45,17 +45,6 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-/* Declare the function that ends the game for both player and computer passing in player score and computer score*/
-function endGame(playerScore, computerScore){
-    //If player score is 5, notify the winner with paragraph, 'Player Wins the Game!'
-    if(playerScore === 5){
-        paragraphAnnounce.textContent = 'Player Wins the Game!';
-    }
-    //If computer score is 5, notify the winner with paragraph, 'Computer Wins the Game!'
-    else if(computerScore === 5){
-        paragraphAnnounce.textContent = 'Computer Wins the Game!';
-    }
-}
 
 
 /* Declare a function that enables both player and the computer to play the full game up to 5 rounds*/
@@ -93,6 +82,8 @@ function startGame(){
     paragraphAnnounce.id = 'announce';
     //Append the paragraph element to the result class of div element to make an element appear
     result.appendChild(paragraphAnnounce);
+    //Display the announcement message as empty as the game is reset or is a new game
+    paragraphAnnounce.textContent = '';
 
     //Create variable called playerSelection that enable the player to make a choice
     let playerSelection;
@@ -116,12 +107,21 @@ function startGame(){
         }
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
-        if(playerScore === 5 || computerScore === 5){
-            endGame(playerScore,computerScore);
-            playerScore = 0;
-            computerScore = 0;
+        if(playerScore === 5 || computerScore === 5){    
+            //Display the scores to the user to see the results
             paragraphComputer.textContent = 'Computer Score: ' + computerScore;
             paragraphPlayer.textContent = 'Player Score: ' + playerScore;
+            //Announce the winner. If the player wins, display this message
+            if(playerScore === 5){
+                paragraphAnnounce.textContent = 'Player Wins the Game!';
+            }
+            //If the computer wins, display this message
+            else if(computerScore === 5) {
+                paragraphAnnounce.textContent = 'Computer Wins the Game!';
+            }
+            //Reset the scores
+            playerScore = 0;
+            computerScore = 0;
         }
     });
 
@@ -144,7 +144,6 @@ function startGame(){
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
-            endGame(playerScore,computerScore);
             playerScore = 0;
             computerScore = 0;
             paragraphComputer.textContent = 'Computer Score: ' + computerScore;
@@ -172,7 +171,6 @@ function startGame(){
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
-            endGame(playerScore, computerScore);
             computerScore = 0;
             playerScore = 0;
             paragraphComputer.textContent = 'Computer Score: ' + computerScore;
