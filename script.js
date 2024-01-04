@@ -136,6 +136,14 @@ function startGame(){
         let computerSelection = getComputerChoice();
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
+        //Reset and display the scores to 0 if player score or computer score is equal to 5 and end the game
+        if(playerScore === 5 || computerScore === 5){
+            playerScore = 0;
+            computerScore = 0;
+            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
+            return false;
+        }       
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
@@ -147,10 +155,14 @@ function startGame(){
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
-            playerScore = 0;
-            computerScore = 0;
-            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
-            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
+            //Announce the winner. If the player wins, display this message
+            if(playerScore === 5){
+                paragraphAnnounce.textContent = 'Player Wins the Game!';
+            }
+            //If the computer wins, display this message
+            else if(computerScore === 5) {
+                paragraphAnnounce.textContent = 'Computer Wins the Game!';
+            }
         }
     });
 
@@ -162,7 +174,14 @@ function startGame(){
         let computerSelection = getComputerChoice();
         //Play the round after both player and computer selects the input
         playRound(playerSelection,computerSelection);
-
+        //Reset and display the scores to 0 if player score or computer score is equal to 5 and end the game
+        if(playerScore === 5 || computerScore === 5){
+            playerScore = 0;
+            computerScore = 0;
+            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
+            return false;
+        }      
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
@@ -174,10 +193,14 @@ function startGame(){
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
-            computerScore = 0;
-            playerScore = 0;
-            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
-            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
+            //Announce the winner. If the player wins, display this message
+            if(playerScore === 5){
+                paragraphAnnounce.textContent = 'Player Wins the Game!';
+            }
+            //If the computer wins, display this message
+            else if(computerScore === 5) {
+                paragraphAnnounce.textContent = 'Computer Wins the Game!';
+            }
         }
     });
 }
