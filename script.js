@@ -96,6 +96,8 @@ function startGame(){
             //Display the announcement message as empty as the game is reset or is a new game
             paragraphAnnounce.textContent = '';
             //Display the scores as both 0 for player and computer
+            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         } 
         //Store the text value of Rock button into playerSelection variable
         playerSelection = rock.textContent.toLowerCase();
