@@ -118,9 +118,6 @@ function startGame(){
             else if(computerScore === 5) {
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
-            //Display the scores to the user to see the results
-            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
-            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         }
     });
 
