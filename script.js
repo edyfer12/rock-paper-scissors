@@ -91,11 +91,8 @@ function startGame(){
     paragraphPlayer.textContent = 'Player Score: ' + playerScore;
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {
-        //If the score is more than 5 points from player or the computer after is clicked, reset the scores
-        if(playerScore === 5 || computerScore === 5){
-            //Display the announcement message as empty as the game is reset or is a new game
-            paragraphAnnounce.textContent = '';
-        } 
+        //Display the announcement message as empty as the game is reset or is a new game
+        paragraphAnnounce.textContent = '';
 
         //Store the text value of Rock button into playerSelection variable
         playerSelection = rock.textContent.toLowerCase();
