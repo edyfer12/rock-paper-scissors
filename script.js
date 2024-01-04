@@ -47,13 +47,13 @@ function playRound(playerSelection, computerSelection){
 
 /* Declare the function that ends the game for both player and computer passing in player score and computer score*/
 function endGame(playerScore, computerScore){
-    //If player score is 5, notify the winner with alert, 'Player Wins the Game!'
+    //If player score is 5, notify the winner with paragraph, 'Player Wins the Game!'
     if(playerScore === 5){
-        alert('Player Wins the Game!');
+        paragraphAnnounce.textContent = 'Player Wins the Game!';
     }
-    //If computer score is 5, notify the winner with alert, 'Computer Wins the Game!'
+    //If computer score is 5, notify the winner with paragraph, 'Computer Wins the Game!'
     else if(computerScore === 5){
-        alert('Computer Wins the Game!');
+        paragraphAnnounce.textContent = 'Computer Wins the Game!';
     }
 }
 
@@ -86,6 +86,13 @@ function startGame(){
     paragraphComputer.style.cssText = 'display:inline-block; margin-right:50px;';
     //Append the paragraph element to the result class of div element
     result.appendChild(paragraphComputer);
+
+    //Create a paragraph that annouces the winner of the game
+    let paragraphAnnounce = document.createElement('p');
+    //Set an id to announce for the paragraph element to avoid overlapping other paragraph elements
+    paragraphAnnounce.id = 'announce';
+    //Append the paragraph element to the result class of div element to make an element appear
+    result.appendChild(paragraphAnnounce);
 
     //Create variable called playerSelection that enable the player to make a choice
     let playerSelection;
