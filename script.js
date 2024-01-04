@@ -108,7 +108,7 @@ function startGame(){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
         }
 
-        //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
+        //If the player or computer score 5 points, end the game with announcement of winner on paragraph
         if(playerScore === 5 || computerScore === 5){          
             //Announce the winner. If the player wins, display this message
             if(playerScore === 5){
