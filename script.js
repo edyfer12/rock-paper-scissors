@@ -134,8 +134,6 @@ function startGame(){
         playerSelection = paper.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
         let computerSelection = getComputerChoice();
-        //Play the round after both player and computer selects the input
-        playRound(playerSelection,computerSelection);
         //Reset and display the scores to 0 if player score or computer score is equal to 5 and end the game
         if(playerScore === 5 || computerScore === 5){
             playerScore = 0;
@@ -172,8 +170,6 @@ function startGame(){
         playerSelection = paper.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
         let computerSelection = getComputerChoice();
-        //Play the round after both player and computer selects the input
-        playRound(playerSelection,computerSelection);
         //Reset and display the scores to 0 if player score or computer score is equal to 5 and end the game
         if(playerScore === 5 || computerScore === 5){
             playerScore = 0;
