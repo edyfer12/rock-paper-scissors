@@ -103,8 +103,6 @@ function startGame(){
         playerSelection = rock.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
         let computerSelection = getComputerChoice();
-        //Play the round after both player and computer selects the input
-        playRound(playerSelection,computerSelection);
        
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
