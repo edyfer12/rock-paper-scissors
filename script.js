@@ -130,6 +130,8 @@ function startGame(){
 
     //If the player clicks the Paper button, 
     paper.addEventListener('click', () =>{
+        //Display the announcement message as empty as the game is reset or is a new game
+        paragraphAnnounce.textContent = ''; 
         //Store the text value of Paper button into the playerSelection variable
         playerSelection = paper.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
@@ -166,6 +168,8 @@ function startGame(){
 
     //If the player clicks the Scissors button, 
     scissors.addEventListener('click', () => {
+        //Display the announcement message as empty as the game is reset or is a new game
+        paragraphAnnounce.textContent = ''; 
         //Store the text value of Scissors button into the playerSelection variable
         playerSelection = paper.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
