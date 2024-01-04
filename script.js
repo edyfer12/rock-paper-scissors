@@ -93,9 +93,6 @@ function startGame(){
     rock.addEventListener('click', () => {
         //If the score is more than 5 points from player or the computer after is clicked, reset the scores
         if(playerScore === 5 || computerScore === 5){
-            //Reset the scores to restart game
-            playerScore = 0;
-            computerScore = 0;
             //Display the announcement message as empty as the game is reset or is a new game
             paragraphAnnounce.textContent = '';
         } 
@@ -125,7 +122,7 @@ function startGame(){
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
             //Display the scores to the user to see the results
-            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+            paragraphComputer.textContent = 'Computer Score: ' + comput0erScore;
             paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         }
     });
