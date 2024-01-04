@@ -98,6 +98,9 @@ function startGame(){
         playerSelection = rock.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
         let computerSelection = getComputerChoice();
+
+        //If the score from the player or computer is greater than 5, reset the game
+            //Reset both scores to 0
        
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
