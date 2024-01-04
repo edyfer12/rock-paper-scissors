@@ -86,19 +86,20 @@ function startGame(){
     //Create variable called playerSelection that enable the player to make a choice
     let playerSelection;
 
+    //Display the scores for player and computer
+    paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+    paragraphPlayer.textContent = 'Player Score: ' + playerScore;
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {
         //If the score is more than 5 points from player or the computer after is clicked, reset the scores
-        if(playerScore >= 5 || computerScore >= 5){
+        if(playerScore === 5 || computerScore === 5){
             //Reset the scores to restart game
             playerScore = 0;
             computerScore = 0;
             //Display the announcement message as empty as the game is reset or is a new game
             paragraphAnnounce.textContent = '';
-            //Display the scores as both 0 for player and computer
-            paragraphComputer.textContent = 'Computer Score: ' + computerScore;
-            paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         } 
+
         //Store the text value of Rock button into playerSelection variable
         playerSelection = rock.textContent.toLowerCase();
         //Create variable called computerSelection that enable the computer to make a choice
