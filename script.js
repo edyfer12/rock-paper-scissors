@@ -118,6 +118,8 @@ function startGame(){
             else if(computerScore === 5) {
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
+            //If the player clicks one more when player score is 5 or computer score is 5,
+            //remove the winner announcement and display the scores for both player and computer as 0
         }
     });
 
