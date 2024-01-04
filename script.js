@@ -121,9 +121,6 @@ function startGame(){
             //Display the scores to the user to see the results
             paragraphComputer.textContent = 'Computer Score: ' + computerScore;
             paragraphPlayer.textContent = 'Player Score: ' + playerScore;
-            //Reset the scores to restart game
-            playerScore = 0;
-            computerScore = 0;
         }
     });
 
