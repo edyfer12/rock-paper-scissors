@@ -74,3 +74,29 @@ img{
     flex-direction: row;
     justify-content: space-between;
 }
+
+/*Stylize the buttons for the headers*/
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/*Stylize the button that restarts*/
+button#restart {
+    height: 100px;
+    margin: 0;
+}
+
+/*Stylize the audio button*/
+button#audio {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+/*Stylize the image for the audio button*/
+#audio img {
+    height: 100%;
+    margin: 0;
+}
