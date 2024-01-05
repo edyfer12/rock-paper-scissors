@@ -19,3 +19,6 @@ body {
 }
 
 /* Stylize the id selector for the button */
+button#rock {
+    margin-left: 344px;
+}
