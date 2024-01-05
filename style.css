@@ -72,7 +72,8 @@ img{
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 145px;
 }
 
 /*Stylize the buttons for the headers*/
