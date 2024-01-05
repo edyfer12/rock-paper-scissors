@@ -16,10 +16,10 @@
 
 /* Stylize the button */
 button {
-    background-color: none;
-    color:black;
-    font-size: 3vh;
-    border:none;
+    color: black;
+    font-size: 6vh;
+    border: none;
+    margin: 0 5vh;
 }
 
 /* Stylize the body */
