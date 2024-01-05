@@ -68,4 +68,9 @@ img{
     display: block;
 }
 
-/*Stylize the audio button*/
+/*Stylize the header*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
