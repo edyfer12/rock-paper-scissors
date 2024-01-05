@@ -10,7 +10,7 @@
 /* Stylize the class selector consisting of buttons */
 .buttons{
     text-align: center;
-    padding-top: 53vh;
+    padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
@@ -29,7 +29,7 @@ button {
 /* Stylize the body */
 body {
     height: 100vh;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/002/633/145/non_2x/the-texture-of-old-brown-crumpled-paper-photo.jpg');
+    background-image: url('https://cdn.create.vista.com/api/media/small/564010668/stock-photo-texture-parchment-paper-background-closeup');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -48,7 +48,6 @@ button:hover{
 #instruction{
     font-weight: bold;
     font-size: 3.25vh;
-    margin-left: -25vh;
 }
 
 /* Stylize the heading */
@@ -57,4 +56,11 @@ h1{
     text-align: center;
     font-weight: bold;
     padding-top: 1vh;
+}
+
+/* Stylize the image */
+img{
+    margin: 3vh 67vh;
+    border-radius: 11vh;
+    height: 35vh;
 }
