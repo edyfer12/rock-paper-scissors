@@ -63,7 +63,7 @@ function startGame(){
     //Add id attribute for the paragraphPlayer
     paragraphPlayer.id = 'player';
     //Stylize the paragraph that displays player score
-    paragraphPlayer.style.cssText = 'display: inline-block; margin-left: 62px; margin-right: 10px;';
+    paragraphPlayer.style.cssText = 'display: inline-block; font-size:5vh; margin-right:5vh; font-weight:bold';
     //Append the paragraph element for player created to the result class div element
     result.appendChild(paragraphPlayer);
     
@@ -72,7 +72,7 @@ function startGame(){
     //Add id attribute for the paragraph
     paragraphComputer.id = 'computer';
     //Stylize the paragraph
-    paragraphComputer.style.cssText = 'display:inline-block; margin-right:50px;';
+    paragraphComputer.style.cssText = 'display:inline-block; font-size: 5vh; font-weight: bold';
     //Append the paragraph element to the result class of div element
     result.appendChild(paragraphComputer);
 
@@ -81,7 +81,7 @@ function startGame(){
     //Set an id to announce for the paragraph element to avoid overlapping other paragraph elements
     paragraphAnnounce.id = 'announce';
     //Stylize the announce id for the paragraph
-    paragraphAnnounce.style.cssText = 'text-align: center,font-size: 24px; font-weight: bold;';
+    paragraphAnnounce.style.cssText = 'text-align: center; font-size: 10vh; font-weight: bold;';
     //Append the paragraph element to the result class of div element to make an element appear
     result.appendChild(paragraphAnnounce);  
 
