@@ -29,3 +29,6 @@ button#rock {
 }
 
 /* Stylize the button when it is hovered */
+button:hover{
+    cursor: pointer;
+}
