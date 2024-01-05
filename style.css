@@ -50,3 +50,11 @@ button:hover{
     font-size: 3.25vh;
     margin-left: -25vh;
 }
+
+/* Stylize the heading */
+h1{
+    font-size: 6vh;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1vh;
+}
