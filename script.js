@@ -111,10 +111,12 @@ function startGame(){
         //If the player wins the round, add player score by 1 and display the added score for player
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
+            paragraphAnnounce.textContent = 'You win this round!';
         }
         //If the player loses the round, add computer score by 1 and display the added score for computer
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
+            paragraphAnnounce.textContent = 'You lose this round!';
         }
 
         //If the player or computer score 5 points, end the game with announcement of winner on paragraph
