@@ -4,7 +4,6 @@
     margin:0;
     box-sizing: border-box;
     display: flexbox;
-    border:1px solid black;
 }
 
 /* Stylize the class selector consisting of buttons */
@@ -18,13 +17,20 @@
 button {
     color: black;
     font-size: 6vh;
-    border: none;
+    border: 0.5vh solid black;
+    border-radius: 2vh;
     margin: 2.5vh 5vh;
+    background: none;
+    font-weight: bolder;
+    padding: 0.5vh;
 }
 
 /* Stylize the body */
 body {
     height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/633/145/non_2x/the-texture-of-old-brown-crumpled-paper-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /* Stylize the class selector for the div element */
