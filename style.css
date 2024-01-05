@@ -1,0 +1,5 @@
+/* Stylise all the HTML elements including the body element */
+* {
+    padding:0;
+    margin:0;
+}
