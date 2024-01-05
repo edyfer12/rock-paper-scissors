@@ -24,3 +24,6 @@ button#rock {
 }
 
 /* Stylize the class selector for the div element */
+.result {
+    text-align: center;
+}
