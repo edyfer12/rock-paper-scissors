@@ -119,6 +119,9 @@ function startGame(){
             paragraphAnnounce.textContent = 'You lose this round!';
         }
         //If the player ties the round, just display the announcement and do not increment the scores 
+        else {
+            paragraphAnnounce.textContent = 'You tied this round!';
+        }
 
         //If the player or computer score 5 points, end the game with announcement of winner on paragraph
         if(playerScore === 5 || computerScore === 5){          
