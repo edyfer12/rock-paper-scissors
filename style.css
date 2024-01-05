@@ -9,8 +9,8 @@
 
 /* Stylize the button */
 button {
-    margin-top: 129px;
-    margin-bottom: 50px;
+    margin-top: 195px;
+    margin-bottom: 19px;
 }
 
 /* Stylize the body */
@@ -27,5 +27,3 @@ button#rock {
 .result {
     text-align: center;
 }
-
-/* Stylize the id selector for the button */
