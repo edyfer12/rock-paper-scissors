@@ -10,20 +10,20 @@
 /* Stylize the class selector consisting of buttons */
 .buttons{
     text-align: center;
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 
 /* Stylize the button */
 button {
     color: black;
-    font-size: 18px;
+    font-size: 40px;
     border: 0.5px solid black;
     border-radius: 10px;
     margin: 2.5px 5px;
     background: none;
     font-weight: bolder;
-    padding: 0.5px;
+    padding: 15px;
 }
 
 /* Stylize the body */
@@ -31,7 +31,9 @@ body {
     height: 100vh;
     background-image: url('https://cdn.create.vista.com/api/media/small/564010668/stock-photo-texture-parchment-paper-background-closeup');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Stylize the class selector for the div element */
@@ -47,19 +49,21 @@ button:hover{
 /* Stylize the id selector for the paragraph */
 #instruction{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 /* Stylize the heading */
 h1{
     text-align: center;
     font-weight: bold;
-    padding: 10px;
+    padding: 40px;
+    font-size: 40px;
 }
 
 /* Stylize the image */
 img{
-    margin: 3px 67px;
+    margin: 3px auto;
     border-radius: 11px;
-    height: 350px;
+    height: 284px;
+    display: block;
 }
