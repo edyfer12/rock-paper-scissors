@@ -63,7 +63,7 @@ function startGame(){
     //Add id attribute for the paragraphPlayer
     paragraphPlayer.id = 'player';
     //Stylize the paragraph that displays player score
-    paragraphPlayer.style.cssText = 'display:inline-block; margin-top:10px;';
+    paragraphPlayer.style.cssText = 'display: inline-block; margin-left: 62px; margin-right: 10px;';
     //Append the paragraph element for player created to the result class div element
     result.appendChild(paragraphPlayer);
     
