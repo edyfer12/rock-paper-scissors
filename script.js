@@ -155,12 +155,17 @@ function startGame(){
         //If the player wins the round, add player score by 1, display the added score for player and announcement
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
+            paragraphAnnounce.textContent = 'You won this round!';
         }
         //If the player loses the round, add computer score by 1, display the added score for computer and announcement
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
             paragraphComputer.textContent = 'Computer Score: ' +  ++computerScore;
+            paragraphAnnounce.textContent = 'You lost this round!';
         }
         //If the player ties the round, just display the announcement and do not increment the scores
+        else {
+            paragraphAnnounce.textContent = 'You tied this round!';
+        }
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
@@ -194,12 +199,17 @@ function startGame(){
         //If the player wins the round, add player score by 1, display the added score for player and announcement
         if(playRound(playerSelection,computerSelection) === 'You Win!'){
             paragraphPlayer.textContent = 'Player Score: ' + ++playerScore;
+            paragraphAnnounce.textContent = 'You won this round!';
         }
         //If the player loses the round, add computer score by 1, display the added score for computer and announcement
         else if(playRound(playerSelection, computerSelection) === 'You lose!'){
             paragraphComputer.textContent = 'Computer Score: ' + ++computerScore;
+            paragraphAnnounce.textContent = 'You lost this round!';
         }
         //If the player ties the round, display the announcement and do not increment the scores
+        else {
+            paragraphAnnounce.textContent = 'You tied this round!';
+        }
 
         //If the player or computer score 5 points, end the game and reset the scores displayed on paragraphs
         if(playerScore === 5 || computerScore === 5){
