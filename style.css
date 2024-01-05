@@ -10,20 +10,20 @@
 /* Stylize the class selector consisting of buttons */
 .buttons{
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 /* Stylize the button */
 button {
     color: black;
-    font-size: 6vh;
-    border: 0.5vh solid black;
-    border-radius: 2vh;
-    margin: 2.5vh 5vh;
+    font-size: 18px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    margin: 2.5px 5px;
     background: none;
     font-weight: bolder;
-    padding: 0.5vh;
+    padding: 0.5px;
 }
 
 /* Stylize the body */
@@ -47,20 +47,19 @@ button:hover{
 /* Stylize the id selector for the paragraph */
 #instruction{
     font-weight: bold;
-    font-size: 3.25vh;
+    font-size: 18px;
 }
 
 /* Stylize the heading */
 h1{
-    font-size: 6vh;
     text-align: center;
     font-weight: bold;
-    padding: 2vh;
+    padding: 10px;
 }
 
 /* Stylize the image */
 img{
-    margin: 3vh 67vh;
-    border-radius: 11vh;
-    height: 35vh;
+    margin: 3px 67px;
+    border-radius: 11px;
+    height: 350px;
 }
