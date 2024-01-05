@@ -11,6 +11,8 @@
 button {
     margin-top: 195px;
     margin-bottom: 19px;
+    background-color: none;
+    color:black;
 }
 
 /* Stylize the body */
@@ -20,7 +22,7 @@ body {
 
 /* Stylize the id selector for the button */
 button#rock {
-    margin-left: 360px;
+    margin-left: 680px;
 }
 
 /* Stylize the class selector for the div element */
