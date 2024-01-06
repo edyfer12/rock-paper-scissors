@@ -91,6 +91,14 @@ function startGame(){
     //Display the scores for player and computer
     paragraphComputer.textContent = 'Computer Score: ' + computerScore;
     paragraphPlayer.textContent = 'Player Score: ' + playerScore;
+
+    //If the player clicks the restart button,
+
+        //Set the player score to 0
+        //Set the computer score t0 0
+        //Display the player score
+        //Display the computer score
+
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {  
         //Display the announcement message as empty as the game is reset or is a new game
