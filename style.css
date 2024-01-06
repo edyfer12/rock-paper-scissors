@@ -3,15 +3,13 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    display: flexbox;
     font-family:'Comic Sans MS', cursive;
 }
 
 /* Stylize the class selector consisting of buttons */
 .buttons{
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 /* Stylize the button */
@@ -28,17 +26,15 @@ button {
 
 /* Stylize the body */
 body {
-    height: 100vh;
-    background-image: url('https://cdn.create.vista.com/api/media/small/564010668/stock-photo-texture-parchment-paper-background-closeup');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
 }
 
 /* Stylize the class selector for the div element */
 .result {
+    display: flex;
     text-align: center;
+    flex-direction: column;
 }
 
 /* Stylize the button when it is hovered */
@@ -56,15 +52,16 @@ button:hover{
 h1{
     text-align: center;
     font-weight: bold;
-    padding: 40px;
     font-size: 40px;
+    padding-left: 140px;
+    flex: 10;
 }
 
 /* Stylize the image */
 img{
-    margin: 3px auto;
-    border-radius: 11px;
-    height: 284px;
+    margin: 25px auto;
+    border-radius: 100px;
+    height: 240px;
     display: block;
 }
 
@@ -73,7 +70,8 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 145px;
+    align-items: center;
+    margin-top: 20px;
 }
 
 /*Stylize the buttons for the headers*/
@@ -81,23 +79,42 @@ img{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    flex: 1;
+    margin-right: 10px;
 }
 
 /*Stylize the button that restarts*/
 button#restart {
-    height: 100px;
+    height: 50px;
     margin: 0;
+    flex: 3;
+    padding: 0;
+    font-size: 26px;
 }
 
 /*Stylize the audio button*/
 button#audio {
+    border-radius: 100px;
     margin: 0;
     padding: 0;
-    height: 100px;
+    height: 50px;
+    flex: 1;
 }
 
 /*Stylize the image for the audio button*/
 #audio img {
     height: 100%;
     margin: 0;
+    width: 100%;
+    min-width: 50px;
+}
+
+/* Stylize the root element */
+html{
+    height: 100%;
+    display: flex;
+    background-image: url('https://cdn.create.vista.com/api/media/small/564010668/stock-photo-texture-parchment-paper-background-closeup');
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-size: cover;
 }
