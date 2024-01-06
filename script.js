@@ -81,7 +81,7 @@ function startGame(){
     //Set an id to announce for the paragraph element to avoid overlapping other paragraph elements
     paragraphAnnounce.id = 'announce';
     //Stylize the announce id for the paragraph
-    paragraphAnnounce.style.cssText = 'text-align: center; font-size: 40px; font-weight: bold; padding-top: 49px;';
+    paragraphAnnounce.style.cssText = 'text-align: center; font-size: 40px; font-weight: bold; padding-top: 30px; padding-bottom: 20px;';
     //Append the paragraph element to the result class of div element to make an element appear
     result.appendChild(paragraphAnnounce);  
 
