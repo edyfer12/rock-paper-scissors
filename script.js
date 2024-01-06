@@ -92,6 +92,8 @@ function startGame(){
     paragraphComputer.textContent = 'Computer Score: ' + computerScore;
     paragraphPlayer.textContent = 'Player Score: ' + playerScore;
 
+    //Create a variable and store the reference of the restart button as a value
+
     //If the player clicks the restart button,
 
         //Set the player score to 0
