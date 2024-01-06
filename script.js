@@ -93,13 +93,21 @@ function startGame(){
     paragraphPlayer.textContent = 'Player Score: ' + playerScore;
 
     //Create a variable and store the reference of the restart button as a value
+    let restart = document.querySelector('#restart');
 
     //If the player clicks the restart button,
-
+    restart.addEventListener('click', () => {
         //Set the player score to 0
+        playerScore = 0;
         //Set the computer score t0 0
+        computerScore = 0;
         //Display the player score
+        paragraphPlayer.textContent = 'Player Score: ' + playerScore;
         //Display the computer score
+        paragraphComputer.textContent = 'Computer Score: ' + computerScore;
+        //Display the announcement as empty string
+        paragraphAnnounce.textContent = '';
+    });
 
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {  
