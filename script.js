@@ -57,6 +57,10 @@ function startGame(){
     let scissors = document.querySelector('#scissors');
     //Capture reference for the result class of the div element
     let result = document.querySelector('.result');
+    //As the user loads the page, the music is played in the background repeatedly
+    //If the user clicks the music icon (default), change the icon to mute image and play no sound
+    //If the user clicks the mute icon, change the icon to music icon and play the sound
+    
 
     //Create a paragraph element for player
     let paragraphPlayer = document.createElement('p');
