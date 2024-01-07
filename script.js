@@ -56,9 +56,7 @@ function startGame(){
     //Capture reference for the button named Scissors
     let scissors = document.querySelector('#scissors');
     //Capture reference for the result class of the div element
-    let result = document.querySelector('.result');
-    //Capture reference for the body element
-    let body = document.querySelector(body);    
+    let result = document.querySelector('.result');   
     //Create a paragraph element for player
     let paragraphPlayer = document.createElement('p');
     //Add id attribute for the paragraphPlayer
@@ -245,9 +243,13 @@ function startGame(){
 }
 
 //Declare a function that enables the music to be played in the background of the webpage
+function playMusic(){
     //When the user loads the page, automatically play the music in the background
+        //Capture the reference to the body element
+        //
     //If the user hits the audio button, change the image to the mute button and disable the sound
     //If the user hits the mute button, change the image back to the sound button and enable the sound again
+}
 
 //Declare score variables for player and computer and set both to 0
 let playerScore = 0;
