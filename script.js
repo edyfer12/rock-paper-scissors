@@ -94,12 +94,6 @@ function startGame(){
     //Create a variable and store the reference of the restart button as a value
     let restart = document.querySelector('#restart');
 
-    //Create an object for the sound that plays background music on the webpage with src value passed into object
-    let music = new playMusic("raggamuffin-173303.mp3");
-
-    //Play the music
-    music.play();
-
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
         //Set the player score to 0
