@@ -260,7 +260,10 @@ function playMusic(){
         //Play the music
         audio.play();
         //Append the audio element to the body element
-        return body.appendChild(audio);
+        body.appendChild(audio);
+        //Create an source element that is aimed to be embedded in the audio element
+        //Refer to the audio element that will be used for appending the source to the audio element as a child element
+        //Append the source element to the audio element to display the source element 
         
     //If the user hits the audio button, change the image to the mute button and disable the sound
     //If the user hits the mute button, change the image back to the sound button and enable the sound again
