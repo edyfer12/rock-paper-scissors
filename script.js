@@ -109,6 +109,9 @@ function startGame(){
         bgMusicToggle.play();
         }
     );
+    //If the music is playing and clicks on the Audio button,
+        //change the image button to mute icon
+        //mute the music
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
         //Set the player score to 0
