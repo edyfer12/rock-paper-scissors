@@ -94,6 +94,8 @@ function startGame(){
     //Create a variable and store the reference of the restart button as a value
     let restart = document.querySelector('#restart');
 
+    let audio = playMusic();
+
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
         //Set the player score to 0
@@ -246,10 +248,20 @@ function startGame(){
 function playMusic(){
     //When the user loads the page, automatically play the music in the background
         //Capture the reference to the body element
+        let body = document.querySelector('body');
         //Create an audio HTML element
-        //Add src attribute to the audio element
+        let audio = document.createElement('audio');
         //Enable the audio to autoplay
+        audio.autoplay = true;
         //Enable the audio to repeat the music
+        audio.loop = true;
+        //Load the music
+        audio.load();
+        //Play the music
+        audio.play();
+        //Append the audio element to the body element
+        return body.appendChild(audio);
+        
     //If the user hits the audio button, change the image to the mute button and disable the sound
     //If the user hits the mute button, change the image back to the sound button and enable the sound again
 }
