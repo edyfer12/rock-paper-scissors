@@ -252,6 +252,9 @@ function playMusic(src){
         //Enable the audio to autoplay
         //Set the audio to be able to be repeated
         //Remove the controls from the audio element
+        //Set the display for the audio element to none
+        //Append the audio element for the body element
+        //Enable the button to play
         
     //If the user hits the audio button, change the image to the mute button and disable the sound
     //If the user hits the mute button, change the image back to the sound button and enable the sound again
