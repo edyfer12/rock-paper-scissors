@@ -94,8 +94,6 @@ function startGame(){
     //Create a variable and store the reference of the restart button as a value
     let restart = document.querySelector('#restart');
 
-    let audio = playMusic();
-
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
         //Set the player score to 0
@@ -257,13 +255,16 @@ function playMusic(){
         audio.loop = true;
         //Load the music
         audio.load();
-        //Play the music
-        audio.play();
         //Append the audio element to the body element
         body.appendChild(audio);
         //Create an source element that is aimed to be embedded in the audio element
-        //Refer to the audio element that will be used for appending the source to the audio element as a child element
+        let source = document.createElement('source');
+        
+        //Add src attribute to the source element
+        source.src = "raggamuffin-173303.mp3";
+        
         //Append the source element to the audio element to display the source element 
+        audio.appendChild(source);
         
     //If the user hits the audio button, change the image to the mute button and disable the sound
     //If the user hits the mute button, change the image back to the sound button and enable the sound again
