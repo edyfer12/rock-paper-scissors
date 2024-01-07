@@ -95,9 +95,17 @@ function startGame(){
     let restart = document.querySelector('#restart');
 
     //Create a variable and store the reference of the audio button as a value
+    let audio = document.querySelector('#audio');
     //If the button containing the mute image is clicked, 
+    audio.addEventListener('click', () => {
         //change the image to unmute icon
+        audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
+        "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
+        "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
+        "-pictogram-silhouette-on-white-background-vector.jpg' alt='mute'>";
         //play the music
+        }
+    );
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
         //Set the player score to 0
