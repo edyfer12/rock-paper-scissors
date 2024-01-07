@@ -107,11 +107,9 @@ function startGame(){
         let bgMusicToggle = document.querySelector('#bgMusicToggle');
         //Play the music
         bgMusicToggle.play();
-        }
-    );
-    //If the music is playing and clicks on the Audio button,
-        //change the image button to mute icon
-        //mute the music
+    });
+    //If the music is playing in the background and user clicks on the same button,
+        //change the image back to mute   
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
         //Set the player score to 0
