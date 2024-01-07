@@ -103,7 +103,10 @@ function startGame(){
         "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
         "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
         "-pictogram-silhouette-on-white-background-vector.jpg' alt='mute'>";
-        //play the music
+        //Capture the reference of the audio element
+        let bgMusicToggle = document.querySelector('#bgMusicToggle');
+        //Play the music
+        bgMusicToggle.play();
         }
     );
     //If the player clicks the restart button,
