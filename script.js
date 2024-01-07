@@ -243,28 +243,15 @@ function startGame(){
 }
 
 //Declare a function that enables the music to be played in the background of the webpage
-function playMusic(){
+function playMusic(src){
     //When the user loads the page, automatically play the music in the background
         //Capture the reference to the body element
         let body = document.querySelector('body');
         //Create an audio HTML element
-        let audio = document.createElement('audio');
+        this.audio = document.createElement('audio');
         //Enable the audio to autoplay
-        audio.autoplay = true;
-        //Enable the audio to repeat the music
-        audio.loop = true;
-        //Load the music
-        audio.load();
-        //Append the audio element to the body element
-        body.appendChild(audio);
-        //Create an source element that is aimed to be embedded in the audio element
-        let source = document.createElement('source');
-        
-        //Add src attribute to the source element
-        source.src = "raggamuffin-173303.mp3";
-        
-        //Append the source element to the audio element to display the source element 
-        audio.appendChild(source);
+        //Set the audio to be able to be repeated
+        //Remove the controls from the audio element
         
     //If the user hits the audio button, change the image to the mute button and disable the sound
     //If the user hits the mute button, change the image back to the sound button and enable the sound again
