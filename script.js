@@ -263,8 +263,6 @@ function playMusic(src){
         body.appendChild(this.audio);
         //Enable the audio to play
         this.play = () => this.audio.play();
-        //Enable the audio to muted
-        this.mute = () => this.audio.muted();
         
     //If the user hits the audio button, change the image to the mute button and disable the sound
     //If the user hits the mute button, change the image back to the sound button and enable the sound again
