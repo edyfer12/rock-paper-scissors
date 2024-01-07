@@ -58,6 +58,9 @@ function startGame(){
     //Capture reference for the result class of the div element
     let result = document.querySelector('.result');
     //As the user loads the page, the music is played in the background repeatedly
+    //Create audio element to enable music to be played
+    //Add src attribute to the audio element to identify the music to be played
+    //Append the audio element to the body element
     //If the user clicks the music icon (default), change the icon to mute image and play no sound
     //If the user clicks the mute icon, change the icon to music icon and play the sound
     
