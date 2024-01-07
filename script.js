@@ -248,12 +248,6 @@ function startGame(){
     });
 }
 
-//Declare a function that enables the music to be played in the background of the webpage
-function playMusic(src){
-    //If the user hits the audio button, change the image to the mute button and disable the sound
-    //If the user hits the mute button, change the image back to the sound button and enable the sound again
-}
-
 //Declare score variables for player and computer and set both to 0
 let playerScore = 0;
 let computerScore = 0;
