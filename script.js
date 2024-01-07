@@ -94,6 +94,10 @@ function startGame(){
     //Create a variable and store the reference of the restart button as a value
     let restart = document.querySelector('#restart');
 
+    //Create a variable and store the reference of the audio button as a value
+    //If the button containing the mute image is clicked, 
+        //change the image to unmute icon
+        //play the music
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
         //Set the player score to 0
