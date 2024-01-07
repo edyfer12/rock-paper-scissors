@@ -94,7 +94,11 @@ function startGame(){
     //Create a variable and store the reference of the restart button as a value
     let restart = document.querySelector('#restart');
 
-    //Create an object for the sound that plays background music on the webpage
+    //Create an object for the sound that plays background music on the webpage with src value passed into object
+    let music = new playMusic("raggamuffin-173303.mp3");
+
+    //Play the music
+    music.play();
 
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
@@ -247,8 +251,6 @@ function startGame(){
 //Declare a function that enables the music to be played in the background of the webpage
 function playMusic(src){
     //When the user loads the page, automatically play the music in the background
-        //Capture the reference to the body element
-        let body = document.querySelector('body');
         //Create an audio HTML element
         this.audio = document.createElement('audio');
         //Enable the audio to autoplay
