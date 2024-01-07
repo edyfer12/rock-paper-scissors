@@ -246,7 +246,10 @@ function startGame(){
 function playMusic(){
     //When the user loads the page, automatically play the music in the background
         //Capture the reference to the body element
-        //
+        //Create an audio HTML element
+        //Add src attribute to the audio element
+        //Enable the audio to autoplay
+        //Enable the audio to repeat the music
     //If the user hits the audio button, change the image to the mute button and disable the sound
     //If the user hits the mute button, change the image back to the sound button and enable the sound again
 }
