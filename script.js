@@ -185,6 +185,7 @@ function startGame(){
             else if(computerScore === 5) {
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
+            //If the game is won or lost, stop the music
         }
     });
 
@@ -229,6 +230,7 @@ function startGame(){
             else if(computerScore === 5) {
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
+            //If the game is won or lost, stop the music
         }
     });
 
@@ -273,6 +275,7 @@ function startGame(){
             else if(computerScore === 5) {
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
+            //If the game is won or lost, stop the music
         }
     });
 }
