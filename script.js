@@ -186,6 +186,9 @@ function startGame(){
                 paragraphAnnounce.textContent = 'Computer Wins the Game!';
             }
             //If the game is won or lost, stop the music
+            bgMusicToggle.load();
+            //Change the sound icon to mute button
+            audio.innerHTML = '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=czrINWt2weKC3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=">';
         }
     });
 
