@@ -138,8 +138,13 @@ function startGame(){
 
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {
-        //Play the music
-        bgMusicToggle.play();
+        //Play the music if the image of the audio button is an unmute button
+        if(audio.innerHTML === "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
+        "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
+        "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
+        "-pictogram-silhouette-on-white-background-vector.jpg' alt='unmute'>'"){
+            bgMusicToggle.play();
+        }
         //Change the muted icon to unmuted icon on the audio button 
         audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
         "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
