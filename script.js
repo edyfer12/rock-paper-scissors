@@ -96,17 +96,32 @@ function startGame(){
 
     //Create a variable and store the reference of the audio button as a value
     let audio = document.querySelector('#audio');
+    //Capture the reference of the audio element
+    let bgMusicToggle = document.querySelector('#bgMusicToggle');
     //If the button containing the mute image is clicked, 
-    audio.addEventListener('click', () => {
-        //change the image to unmute icon
-        audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
-        "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
-        "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
-        "-pictogram-silhouette-on-white-background-vector.jpg' alt='mute'>";
-        //Capture the reference of the audio element
-        let bgMusicToggle = document.querySelector('#bgMusicToggle');
-        //Play the music
-        bgMusicToggle.play();
+    audio.addEventListener('click', () => { 
+        //If music is paused and muted,
+        if(bgMusicToggle.paused){
+            //change the image to unmute icon
+             audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
+            "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
+            "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
+            "-pictogram-silhouette-on-white-background-vector.jpg' alt='mute'>";
+            //Play the music
+            bgMusicToggle.play();
+        }
+        //if music is playing and unmuted,
+        else if(bgMusicToggle.play()){
+            //Mute the music
+            bgMusicToggle.muted = true;
+            //Change the image to the mute icon
+            audio.innerHTML = "<img src='https://media.istockphoto.com/id/1305893663/vector/silent-sound" +
+            "-off-icon-vector-for-your-web-design-logo-ui-illustration.jpg?s=612x612&w=0&k=20&c=czrINWt2weK"
+            +"C3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=" + "' alt='mute'>";
+        }
+        //If music is playing and is muted
+            //Unmute the music
+            //Change the image to the unmute icon
     });
     //If the music is playing in the background and user clicks on the same button,
         //change the image back to mute   
