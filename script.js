@@ -98,30 +98,37 @@ function startGame(){
     let audio = document.querySelector('#audio');
     //Capture the reference of the audio element
     let bgMusicToggle = document.querySelector('#bgMusicToggle');
-    //If the button containing the mute image is clicked, 
-    audio.addEventListener('click', () => { 
-        //If music is paused and muted,
-        if(bgMusicToggle.paused === true){
-            //change the image to unmute icon
-             audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
+
+    /********************************************Algorithm for Muting and Unmuting Music************************************/
+    //When the player clicks on the audio button that has a mute logo and page is loaded, 
+    audio.addEventListener('click', () => {
+        if(audio.innerHTML == '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=czrINWt2weKC3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=">'){  
+        //the image is changed to an unmute icon
+            audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
             "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
             "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
             "-pictogram-silhouette-on-white-background-vector.jpg' alt='unmute'>";
-            //Play the music
+            //unmute if music is muted mode
+            if(bgMusicToggle.muted){
+                bgMusicToggle.muted = false;
+            }
+            //adjust the default volume
+            bgMusicToggle.volume = 0.05;
+            //repeat the music
+            bgMusicToggle.loop = true;
+            //music is played
             bgMusicToggle.play();
+            
         }
-        //if music is playing and unmuted,
-        else if(bgMusicToggle.play()){
-            //Mute the music
+        //When the player clicks on the audio button that has an unmute logo,
+        else { 
+            //image is changed to a mute icon
+            audio.innerHTML = '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=czrINWt2weKC3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=">';
+            //music is muted
             bgMusicToggle.muted = true;
-            //Change the image to the mute icon
-            audio.innerHTML = "<img src='https://media.istockphoto.com/id/1305893663/vector/silent-sound" +
-            "-off-icon-vector-for-your-web-design-logo-ui-illustration.jpg?s=612x612&w=0&k=20&c=czrINWt2weK"
-            +"C3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=" + "' alt='mute'>";
         }
     });
-    //If the music is playing in the background and user clicks on the same button,
-        //change the image back to mute   
+    /***********************************************************************************************************************/ 
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
         //Set the player score to 0
