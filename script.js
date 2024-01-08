@@ -138,18 +138,15 @@ function startGame(){
 
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {
-        //Play the music if the image of the audio button is an unmute button
-        if(audio.innerHTML === "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
-        "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
-        "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
-        "-pictogram-silhouette-on-white-background-vector.jpg' alt='unmute'>'"){
-            bgMusicToggle.play();
+        bgMusicToggle.play();
+        bgMusicToggle.volume = 0.01;
+        //Play the music in silent mode if mute button is on
+        if(audio.innerHTML === '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector'
+        + '-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=c' + 
+        'zrINWt2weKC3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=">'){
+            bgMusicToggle.muted = true;
         }
-        //Change the muted icon to unmuted icon on the audio button 
-        audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
-        "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
-        "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
-        "-pictogram-silhouette-on-white-background-vector.jpg' alt='unmute'>";
+        
         //Display the announcement message as empty as the game is reset or is a new game
         paragraphAnnounce.textContent = ''; 
         //Store the text value of Rock button into playerSelection variable
@@ -201,11 +198,13 @@ function startGame(){
     paper.addEventListener('click', () =>{
         //Play the music
         bgMusicToggle.play();
-        //Change the muted icon to unmuted icon on the audio button 
-        audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
-        "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
-        "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
-        "-pictogram-silhouette-on-white-background-vector.jpg' alt='unmute'>";
+        bgMusicToggle.volume = 0.01;
+        //Play the music in silent mode if mute button is on
+        if(audio.innerHTML === '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector'
+        + '-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=c' + 
+        'zrINWt2weKC3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=">'){
+            bgMusicToggle.muted = true;
+        }
         //Display the announcement message as empty as the game is reset or is a new game
         paragraphAnnounce.textContent = ''; 
         //Store the text value of Paper button into the playerSelection variable
@@ -256,11 +255,13 @@ function startGame(){
     scissors.addEventListener('click', () => {
         //Play the music
         bgMusicToggle.play();
-        //Change the muted icon to unmuted icon on the audio button 
-        audio.innerHTML = "<img src='https://st" + "atic.vecteezy.com/system/resources/" + 
-        "previews/027/381/436/non_2x/sound-speaker" + "-icon-megaphone-announcement-icon-louder" + 
-        "-sound-symbol-mp3-button-musical-design-elements" + "-stereo-button-audio-symbol-speaker" + 
-        "-pictogram-silhouette-on-white-background-vector.jpg' alt='unmute'>";
+        bgMusicToggle.volume = 0.01;
+        //Play the music in silent mode if mute button is on
+        if(audio.innerHTML === '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector'
+        + '-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=c' + 
+        'zrINWt2weKC3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=">'){
+            bgMusicToggle.muted = true;
+        }
         //Display the announcement message as empty as the game is reset or is a new game
         paragraphAnnounce.textContent = ''; 
         //Store the text value of Scissors button into the playerSelection variable
