@@ -112,13 +112,6 @@ function startGame(){
             if(bgMusicToggle.muted){
                 bgMusicToggle.muted = false;
             }
-            //adjust the default volume
-            bgMusicToggle.volume = 0.05;
-            //repeat the music
-            bgMusicToggle.loop = true;
-            //music is played
-            bgMusicToggle.play();
-            
         }
         //When the player clicks on the audio button that has an unmute logo,
         else { 
