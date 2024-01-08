@@ -124,6 +124,9 @@ function startGame(){
     /***********************************************************************************************************************/ 
     //If the player clicks the restart button,
     restart.addEventListener('click', () => {
+        //Play the music from the beginning
+        bgMusicToggle.load();
+        bgMusicToggle.play();
         //Set the player score to 0
         playerScore = 0;
         //Set the computer score t0 0
@@ -138,9 +141,13 @@ function startGame(){
 
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {
+        //Enable the music to be repeateds
         bgMusicToggle.loop = true;
-        bgMusicToggle.play();
+        //Adjust the volume
         bgMusicToggle.volume = 0.01;
+        //Play the music
+        bgMusicToggle.play();
+       
         //Play the music in silent mode if mute button is on
         if(audio.innerHTML === '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector'
         + '-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=c' + 
@@ -197,9 +204,11 @@ function startGame(){
 
     //If the player clicks the Paper button, 
     paper.addEventListener('click', () =>{
+        //Enable the music to be repeated
         bgMusicToggle.loop = true;
         //Play the music
         bgMusicToggle.play();
+        //Adjust the volume
         bgMusicToggle.volume = 0.01;
         //Play the music in silent mode if mute button is on
         if(audio.innerHTML === '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector'
@@ -255,9 +264,11 @@ function startGame(){
 
     //If the player clicks the Scissors button, 
     scissors.addEventListener('click', () => {
+        //Enable the music to be repeated
         bgMusicToggle.loop = true;
         //Play the music
         bgMusicToggle.play();
+        //Adjust the volume
         bgMusicToggle.volume = 0.01;
         //Play the music in silent mode if mute button is on
         if(audio.innerHTML === '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector'
