@@ -138,6 +138,7 @@ function startGame(){
 
     //If the player clicks the Rock button,
     rock.addEventListener('click', () => {
+        bgMusicToggle.loop = true;
         bgMusicToggle.play();
         bgMusicToggle.volume = 0.01;
         //Play the music in silent mode if mute button is on
@@ -196,6 +197,7 @@ function startGame(){
 
     //If the player clicks the Paper button, 
     paper.addEventListener('click', () =>{
+        bgMusicToggle.loop = true;
         //Play the music
         bgMusicToggle.play();
         bgMusicToggle.volume = 0.01;
@@ -253,6 +255,7 @@ function startGame(){
 
     //If the player clicks the Scissors button, 
     scissors.addEventListener('click', () => {
+        bgMusicToggle.loop = true;
         //Play the music
         bgMusicToggle.play();
         bgMusicToggle.volume = 0.01;
