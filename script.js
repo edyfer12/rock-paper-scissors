@@ -126,7 +126,11 @@ function startGame(){
     restart.addEventListener('click', () => {
         //Play the music from the beginning
         bgMusicToggle.load();
-        bgMusicToggle.play();
+        //If the image button is not mute, play the music
+        if(audio.innerHTML === '<img src="https://static.vecteezy.com/system/resources/previews/027/381/436/non_2x/sound-speaker-icon-megaphone-announcement-icon-louder-sound-symbol-mp3-button-musical-design-elements-stereo-button-audio-symbol-speaker-pictogram-silhouette-on-white-background-vector.jpg" alt="unmute">'){
+            bgMusicToggle.play();
+        }
+
         //Set the player score to 0
         playerScore = 0;
         //Set the computer score t0 0
