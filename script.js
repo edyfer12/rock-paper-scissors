@@ -144,7 +144,7 @@ function startGame(){
         //Enable the music to be repeateds
         bgMusicToggle.loop = true;
         //Adjust the volume
-        bgMusicToggle.volume = 0.01;
+        bgMusicToggle.volume = 1;
         //Play the music
         bgMusicToggle.play();
        
@@ -209,7 +209,7 @@ function startGame(){
         //Play the music
         bgMusicToggle.play();
         //Adjust the volume
-        bgMusicToggle.volume = 0.01;
+        bgMusicToggle.volume = 1;
         //Play the music in silent mode if mute button is on
         if(audio.innerHTML === '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector'
         + '-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=c' + 
@@ -269,7 +269,7 @@ function startGame(){
         //Play the music
         bgMusicToggle.play();
         //Adjust the volume
-        bgMusicToggle.volume = 0.01;
+        bgMusicToggle.volume = 1;
         //Play the music in silent mode if mute button is on
         if(audio.innerHTML === '<img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector'
         + '-for-your-web-design-logo-ui-illustration.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=c' + 
